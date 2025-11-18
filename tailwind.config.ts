@@ -57,6 +57,16 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        "oc-blue-400": "#4F8CFF",
+        "oc-blue-500": "#003A99",
+        "oc-blue-50": "#F0F6FF",
+        "oc-gray-700": "#374151",
+        "oc-gray-300": "#D1D5DB",
+        "oc-gray-200": "#E5E7EB",
+        "oc-white": "#FFFFFF",
+      },
+      fontFamily: {
+        montserrat: ["Montserrat", "sans-serif"],
       },
       borderRadius: {
         lg: "var(--radius)",

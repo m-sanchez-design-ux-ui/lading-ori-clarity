@@ -1,0 +1,161 @@
+import { Link } from "react-router-dom";
+import { Linkedin, Twitter, Youtube } from "lucide-react";
+
+export default function Footer() {
+  return (
+    <footer className="w-full bg-oc-blue-400 py-[100px] px-10">
+      <div className="max-w-[1200px] mx-auto">
+        <div className="flex flex-col gap-12">
+          <div className="flex flex-col md:flex-row justify-between items-start gap-8">
+            <div className="flex flex-col gap-4 w-full md:w-[280px]">
+              <Link to="/" className="flex items-center gap-2">
+                <div className="relative w-9 h-9">
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <svg
+                      width="31"
+                      height="31"
+                      viewBox="0 0 31 31"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        width="30.8571"
+                        height="30.8571"
+                        rx="5.14286"
+                        fill="white"
+                      />
+                      <path
+                        d="M9.80493 21.8088L9.80493 20.4756C10.6265 20.9386 11.463 21.2747 12.3144 21.4839C13.1733 21.7005 14.0845 21.8088 15.048 21.8088C16.0114 21.8088 16.9189 21.7005 17.7703 21.4839C18.6292 21.2747 19.4695 20.9386 20.291 20.4756L20.291 21.8088C19.6263 22.2569 18.8421 22.5967 17.9384 22.8282C17.0421 23.0598 16.0787 23.1755 15.048 23.1755C14.0173 23.1755 13.0538 23.0598 12.1576 22.8282C11.2688 22.5967 10.4846 22.2569 9.80493 21.8088Z"
+                        fill="#4F8CFF"
+                      />
+                      <path
+                        d="M9.82266 17.3387C9.21022 17.3387 8.64633 17.2379 8.13099 17.0362C7.61565 16.8345 7.16753 16.5545 6.78662 16.196C6.40572 15.83 6.1107 15.4043 5.90158 14.9188C5.69245 14.4259 5.58789 13.8881 5.58789 13.3056C5.58789 12.723 5.69245 12.189 5.90158 11.7035C6.1107 11.2106 6.40572 10.7849 6.78662 10.4264C7.16753 10.0604 7.61565 9.7766 8.13099 9.57494C8.64633 9.37329 9.20649 9.27246 9.81145 9.27246C10.4239 9.27246 10.984 9.37329 11.4919 9.57494C12.0073 9.7766 12.4554 10.0604 12.8363 10.4264C13.2172 10.7849 13.5122 11.2106 13.7213 11.7035C13.9305 12.189 14.035 12.723 14.035 13.3056C14.035 13.8881 13.9305 14.4259 13.7213 14.9188C13.5122 15.4118 13.2172 15.8375 12.8363 16.196C12.4554 16.5545 12.0073 16.8345 11.4919 17.0362C10.984 17.2379 10.4276 17.3387 9.82266 17.3387ZM9.81145 16.0615C10.2073 16.0615 10.5733 15.9943 10.9094 15.8599C11.2454 15.7254 11.5367 15.535 11.7832 15.2885C12.0297 15.0346 12.2201 14.7433 12.3546 14.4147C12.4965 14.0786 12.5674 13.7089 12.5674 13.3056C12.5674 12.9023 12.4965 12.5363 12.3546 12.2077C12.2201 11.8716 12.0297 11.5803 11.7832 11.3338C11.5367 11.0799 11.2454 10.8857 10.9094 10.7513C10.5733 10.6168 10.2073 10.5496 9.81145 10.5496C9.41561 10.5496 9.04964 10.6168 8.71355 10.7513C8.38493 10.8857 8.09365 11.0799 7.83971 11.3338C7.59324 11.5803 7.39906 11.8716 7.25715 12.2077C7.12271 12.5363 7.05549 12.9023 7.05549 13.3056C7.05549 13.7014 7.12271 14.0674 7.25715 14.4035C7.39906 14.7396 7.59324 15.0346 7.83971 15.2885C8.08618 15.535 8.37746 15.7254 8.71355 15.8599C9.04964 15.9943 9.41561 16.0615 9.81145 16.0615Z"
+                        fill="#4F8CFF"
+                      />
+                      <path
+                        d="M20.8242 11.373C21.4067 11.3731 21.9446 11.4774 22.4375 11.6865C22.9304 11.8956 23.3564 12.1904 23.7148 12.5713C24.0808 12.9522 24.3605 13.3974 24.5547 13.9053C24.7562 14.413 24.8574 14.9694 24.8574 15.5742H23.5771C23.5702 15.1894 23.505 14.8345 23.3779 14.5098C23.2435 14.1738 23.0531 13.8789 22.8066 13.625C22.5603 13.3786 22.2695 13.1839 21.9336 13.042C21.5975 12.9076 21.2275 12.8408 20.8242 12.8408C20.4209 12.8408 20.0509 12.9076 19.7148 13.042C19.3788 13.1839 19.0873 13.3785 18.8408 13.625C18.5945 13.8789 18.4039 14.1738 18.2695 14.5098C18.1425 14.8345 18.0782 15.1894 18.0713 15.5742H16.791C16.791 15.5704 16.791 15.5663 16.791 15.5625C16.7911 14.9652 16.8879 14.4088 17.082 13.8936C17.2837 13.3857 17.5644 12.9415 17.9229 12.5605C18.2888 12.1872 18.7181 11.8956 19.2109 11.6865C19.7038 11.4774 20.2417 11.373 20.8242 11.373Z"
+                        fill="#4F8CFF"
+                      />
+                    </svg>
+                  </div>
+                  <div className="absolute inset-0 border-[1.286px] border-white rounded-[6.857px]"></div>
+                </div>
+                <div className="flex flex-col">
+                  <span className="font-montserrat font-semibold text-base leading-7 tracking-[-0.5px] text-white">
+                    ORIGIN CLARITY AI
+                  </span>
+                </div>
+              </Link>
+
+              <div className="flex flex-col">
+                <p className="font-montserrat font-medium text-sm leading-5 text-white">
+                  © 2025 Origin Clarity AI.
+                  <br />
+                  Todos los derechos reservados.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex flex-col gap-3 w-full md:w-[280px]">
+              <h4 className="font-montserrat font-bold text-sm leading-5 text-white">
+                Información de Contacto
+              </h4>
+              <div className="flex flex-col gap-2">
+                <a
+                  href="mailto:contacto@originclarity.ai"
+                  className="font-montserrat font-medium text-sm leading-5 text-white hover:underline"
+                >
+                  contacto@originclarity.ai
+                </a>
+                <a
+                  href="tel:+00000000000"
+                  className="font-montserrat font-medium text-sm leading-5 text-white hover:underline"
+                >
+                  +00 000 000 000
+                </a>
+              </div>
+            </div>
+
+            <div className="flex flex-col gap-3 w-full md:w-[280px]">
+              <h4 className="font-montserrat font-bold text-sm leading-5 text-white">
+                Enlaces a Políticas
+              </h4>
+              <div className="flex flex-col gap-2">
+                <Link
+                  to="#"
+                  className="font-montserrat font-medium text-sm leading-5 text-white hover:underline"
+                >
+                  Términos y Condiciones
+                </Link>
+                <Link
+                  to="#"
+                  className="font-montserrat font-medium text-sm leading-5 text-white hover:underline"
+                >
+                  Privacidad
+                </Link>
+              </div>
+            </div>
+
+            <div className="flex flex-col gap-3 w-full md:w-[280px]">
+              <h4 className="font-montserrat font-bold text-sm leading-5 text-white">
+                Redes Sociales
+              </h4>
+              <div className="flex items-center gap-3">
+                <a
+                  href="#"
+                  className="flex items-center justify-center w-8 h-8 rounded-md bg-white hover:bg-gray-100 transition-colors"
+                  aria-label="LinkedIn"
+                >
+                  <Linkedin className="w-5 h-5 text-oc-blue-400" />
+                </a>
+                <a
+                  href="#"
+                  className="flex items-center justify-center w-8 h-8 rounded-md bg-white hover:bg-gray-100 transition-colors"
+                  aria-label="Twitter"
+                >
+                  <Twitter className="w-5 h-5 text-oc-blue-400" />
+                </a>
+                <a
+                  href="#"
+                  className="flex items-center justify-center w-8 h-8 rounded-md bg-white hover:bg-gray-100 transition-colors"
+                  aria-label="YouTube"
+                >
+                  <Youtube className="w-5 h-5 text-oc-blue-400" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex flex-col gap-1">
+            <div className="flex items-center gap-3">
+              <span className="font-montserrat font-medium italic text-xs leading-[16.302px] text-white">
+                POWERED BY
+              </span>
+              <svg
+                width="117"
+                height="16"
+                viewBox="0 0 117 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <text
+                  fill="white"
+                  xmlSpace="preserve"
+                  style={{ whiteSpace: "pre" }}
+                  fontFamily="Montserrat"
+                  fontSize="14"
+                  fontWeight="600"
+                  letterSpacing="0em"
+                >
+                  <tspan x="0" y="12.302">
+                    ORIGIN SOLUTIONS
+                  </tspan>
+                </text>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}
