@@ -286,6 +286,322 @@ export default function Index() {
           </div>
         </section>
 
+        <section className="w-full bg-white py-[100px] px-10">
+          <div className="max-w-[1200px] mx-auto">
+            <div className="flex flex-col justify-center items-center gap-12">
+              <h2 className="font-montserrat font-bold text-2xl leading-9 text-center text-oc-gray-700 max-w-[1200px]">
+                Impacto medible en 4 pilares estratégicos de su negocio:
+              </h2>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-[1200px]">
+                <div className="flex flex-col items-center gap-4 p-6 rounded-xl border border-[#E2E8F0] bg-white shadow-sm min-h-[406px]">
+                  <div className="w-[100px] h-[100px] flex items-center justify-center">
+                    <img
+                      src="https://api.builder.io/api/v1/image/assets/TEMP/33be5e73899ba273ba8303939234e15f21a9e45c?width=200"
+                      alt="Coin icon"
+                      className="w-[100px] h-[100px]"
+                    />
+                  </div>
+                  <h3 className="font-montserrat font-semibold text-base leading-7 text-center text-oc-blue-500">
+                    Transformación Económica y ROI Acelerado
+                  </h3>
+                  <div className="flex flex-col gap-3 w-full max-w-[243px]">
+                    <p className="font-montserrat font-normal text-base leading-6 text-oc-gray-700">
+                      • Reducción de costos drástica.
+                    </p>
+                    <p className="font-montserrat font-normal text-base leading-6 text-oc-gray-700">
+                      • Productividad disparada.
+                    </p>
+                    <p className="font-montserrat font-normal text-base leading-6 text-oc-gray-700">
+                      • Onboarding rápido y eficiente.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex flex-col items-center gap-4 p-6 rounded-xl border border-[#E2E8F0] bg-white shadow-sm min-h-[406px]">
+                  <div className="w-[100px] h-[100px] flex items-center justify-center">
+                    <img
+                      src="https://api.builder.io/api/v1/image/assets/TEMP/71f0c8f346e781cfc6a8993bec2ef5b1575309f1?width=199"
+                      alt="Medal icon"
+                      className="w-[99px] h-[99px]"
+                    />
+                  </div>
+                  <h3 className="font-montserrat font-semibold text-base leading-7 text-center text-oc-blue-500">
+                    Liderazgo de Marca y Prestigio
+                  </h3>
+                  <div className="flex flex-col gap-3 w-full max-w-[243px]">
+                    <p className="font-montserrat font-normal text-base leading-6 text-oc-gray-700">
+                      • Respuestas consistentes y alineadas a su identidad.
+                    </p>
+                    <p className="font-montserrat font-normal text-base leading-6 text-oc-gray-700">
+                      • Experiencias memorables en canales clave.
+                    </p>
+                    <p className="font-montserrat font-normal text-base leading-6 text-oc-gray-700">
+                      • Disponibilidad 24/7 con calidad premium.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex flex-col items-center gap-4 p-6 rounded-xl border border-[#E2E8F0] bg-white shadow-sm min-h-[406px]">
+                  <div className="w-[100px] h-[100px] flex items-center justify-center">
+                    <img
+                      src="https://api.builder.io/api/v1/image/assets/TEMP/31aebc5f48838a9de65f188121183e018998febb?width=199"
+                      alt="Trophy icon"
+                      className="w-[99px] h-[99px]"
+                    />
+                  </div>
+                  <h3 className="font-montserrat font-semibold text-base leading-7 text-center text-oc-blue-500">
+                    Excelencia Operativa Optimizada
+                  </h3>
+                  <div className="flex flex-col gap-3 w-full max-w-[243px]">
+                    <p className="font-montserrat font-normal text-base leading-6 text-oc-gray-700">
+                      • Automatización de tareas repetitivas.
+                    </p>
+                    <p className="font-montserrat font-normal text-base leading-6 text-oc-gray-700">
+                      • Respuestas verificadas y auditables.
+                    </p>
+                    <p className="font-montserrat font-normal text-base leading-6 text-oc-gray-700">
+                      • Integración fluida con sistemas existentes.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex flex-col items-center gap-4 p-6 rounded-xl border border-[#E2E8F0] bg-white shadow-sm min-h-[406px]">
+                  <div className="w-[100px] h-[100px] flex items-center justify-center">
+                    <img
+                      src="https://api.builder.io/api/v1/image/assets/TEMP/c9caa1d9796fa639bdc9c7d2b399619ba751290f?width=199"
+                      alt="Rocket icon"
+                      className="w-[99px] h-[99px]"
+                    />
+                  </div>
+                  <h3 className="font-montserrat font-semibold text-base leading-7 text-center text-oc-blue-500">
+                    Tecnología de Vanguardia ('State of the Art')
+                  </h3>
+                  <div className="flex flex-col gap-3 w-full max-w-[243px]">
+                    <p className="font-montserrat font-normal text-base leading-6 text-oc-gray-700">
+                      • Arquitectura escalable y segura.
+                    </p>
+                    <p className="font-montserrat font-normal text-base leading-6 text-oc-gray-700">
+                      • Modelos de lenguaje de última generación.
+                    </p>
+                    <p className="font-montserrat font-normal text-base leading-6 text-oc-gray-700">
+                      • Actualizaciones continuas con zero-downtime.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="w-full bg-oc-blue-50 py-[100px] px-10 relative overflow-hidden">
+          <div className="max-w-[900px] mx-auto">
+            <div className="flex flex-col gap-12">
+              <div className="flex flex-col md:flex-row justify-center items-center gap-12 md:gap-12">
+                <img
+                  src="https://api.builder.io/api/v1/image/assets/TEMP/7e1d9c4dd73da2ce9e4cf085b2a9352e670feb3b?width=303"
+                  alt="Quote illustration"
+                  className="w-[151.304px] h-auto object-contain flex-shrink-0"
+                />
+
+                <div className="flex flex-col gap-7 flex-1 max-w-[600px]">
+                  <h2 className="font-montserrat font-bold text-2xl leading-9 text-oc-gray-700">
+                    Una inversión en inteligencia, No en riesgo.
+                  </h2>
+                  <p className="font-montserrat font-normal text-base leading-6 text-oc-gray-700">
+                    <span className="font-bold text-oc-blue-400">
+                      Origin Clarity AI
+                    </span>{" "}
+                    utiliza la{" "}
+                    <span className="font-bold text-oc-blue-400">
+                      Arquitectura RAG
+                    </span>
+                    , el estándar de oro para la IA empresarial, asegurando que
+                    cada respuesta es precisa, verificada y basada
+                    exclusivamente en su documentación privada.
+                  </p>
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
+                <div className="flex flex-col items-center gap-4 p-6 rounded-xl border border-[#E2E8F0] bg-white shadow-sm">
+                  <img
+                    src="https://api.builder.io/api/v1/image/assets/TEMP/c66cdaf5331847d276789e3c393fc8009ff593ac?width=240"
+                    alt="Client testimonial"
+                    className="w-[120px] h-[120px] rounded-full border-[1.5px] border-oc-blue-400 object-cover"
+                  />
+                  <blockquote className="font-montserrat font-medium text-base leading-6 text-center text-oc-blue-400">
+                    "Excelente precisión y reducción de tiempos de respuesta.
+                    Una herramienta clave para nuestro crecimiento."
+                  </blockquote>
+                  <p className="font-normal text-sm leading-5 text-center text-oc-gray-500">
+                    Testimonio de Cliente
+                  </p>
+                </div>
+
+                <div className="flex flex-col items-center gap-4 p-6 rounded-xl border border-[#E2E8F0] bg-white shadow-sm">
+                  <img
+                    src="https://api.builder.io/api/v1/image/assets/TEMP/f7f6c6b35ab08c41c9e30fc1cecbe2967d3d92af?width=240"
+                    alt="Client testimonial"
+                    className="w-[120px] h-[120px] rounded-full border-[1.5px] border-oc-blue-400 object-cover"
+                  />
+                  <blockquote className="font-montserrat font-medium text-base leading-6 text-center text-oc-blue-400">
+                    "Implementación rápida y segura. El impacto en atención al
+                    cliente fue inmediato."
+                  </blockquote>
+                  <p className="font-normal text-sm leading-5 text-center text-oc-gray-500">
+                    Testimonio de Cliente
+                  </p>
+                </div>
+
+                <div className="flex flex-col items-center gap-4 p-6 rounded-xl border border-[#E2E8F0] bg-white shadow-sm">
+                  <img
+                    src="https://api.builder.io/api/v1/image/assets/TEMP/24cb7c2fa36867442a132e7f51cf8e41357bd20a?width=240"
+                    alt="Client testimonial"
+                    className="w-[120px] h-[120px] rounded-full border-[1.5px] border-oc-blue-400 object-cover"
+                  />
+                  <blockquote className="font-montserrat font-medium text-base leading-6 text-center text-oc-blue-400">
+                    "Integración perfecta con nuestros canales. Altamente
+                    recomendado para empresas serias."
+                  </blockquote>
+                  <p className="font-normal text-sm leading-5 text-center text-oc-gray-500">
+                    Testimonio de Cliente
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <MessageCircleCode
+            className="hidden lg:block absolute left-32 -top-72 text-[#D6E6FF] pointer-events-none"
+            size={91}
+            strokeWidth={1.5}
+          />
+          <BotMessageSquare
+            className="hidden lg:block absolute -right-16 top-12 text-[#D6E6FF] pointer-events-none"
+            size={168}
+            strokeWidth={1.5}
+          />
+          <MessageCircleMore
+            className="hidden lg:block absolute -left-11 bottom-12 text-[#D6E6FF] pointer-events-none"
+            size={168}
+            strokeWidth={1.5}
+          />
+          <MessageCircleMore
+            className="hidden lg:block absolute -right-20 -bottom-56 text-[#D6E6FF] pointer-events-none"
+            size={121}
+            strokeWidth={1.5}
+          />
+          <Bot
+            className="hidden lg:block absolute left-10 top-8 text-[#D6E6FF] pointer-events-none"
+            size={173}
+            strokeWidth={1}
+          />
+          <MessageCircleCode
+            className="hidden lg:block absolute -right-40 -bottom-10 text-[#D6E6FF] pointer-events-none"
+            size={78}
+            strokeWidth={1.5}
+          />
+        </section>
+
+        <section className="w-full bg-white py-[100px] px-10">
+          <div className="max-w-[900px] mx-auto">
+            <div className="flex flex-col gap-12">
+              <div className="flex flex-col lg:flex-row items-center gap-12">
+                <div className="flex flex-col gap-7 flex-1 max-w-[600px]">
+                  <h2 className="font-montserrat font-bold text-2xl leading-9 text-oc-gray-700">
+                    ¿Listo para el futuro? Hablemos sobre su implementación
+                  </h2>
+                  <p className="font-montserrat font-normal text-base leading-6 text-oc-gray-700">
+                    <span className="font-bold text-oc-blue-400">
+                      Origin Clarity AI
+                    </span>{" "}
+                    es su socio estratégico para desbloquear un nuevo nivel de
+                    productividad, fortalecer su marca y asegurar su posición
+                    como líder en la era de la inteligencia artificial.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex flex-col lg:flex-row items-end gap-12">
+                <div className="flex-1 max-w-[600px] w-full p-6 rounded-xl border border-[#E2E8F0] bg-white shadow-sm">
+                  <form className="flex flex-col gap-6">
+                    <div className="flex flex-col gap-1">
+                      <label className="font-montserrat font-semibold text-xs leading-5 text-oc-blue-500">
+                        Nombre
+                      </label>
+                      <input
+                        type="text"
+                        placeholder="Ingresar..."
+                        className="px-3 py-2 rounded-lg border border-oc-gray-200 bg-oc-gray-50 text-sm font-normal text-oc-gray-400 placeholder:text-oc-gray-400 focus:outline-none focus:ring-2 focus:ring-oc-blue-400"
+                      />
+                    </div>
+
+                    <div className="flex flex-col gap-1">
+                      <label className="font-montserrat font-semibold text-xs leading-5 text-oc-blue-500">
+                        Empresa de donde nos contactas
+                      </label>
+                      <input
+                        type="text"
+                        placeholder="Ingresar..."
+                        className="px-3 py-2 rounded-lg border border-oc-gray-200 bg-oc-gray-50 text-sm font-normal text-oc-gray-400 placeholder:text-oc-gray-400 focus:outline-none focus:ring-2 focus:ring-oc-blue-400"
+                      />
+                    </div>
+
+                    <div className="flex flex-col gap-1">
+                      <label className="font-montserrat font-semibold text-xs leading-5 text-oc-blue-500">
+                        Cargo en la empresa
+                      </label>
+                      <input
+                        type="text"
+                        placeholder="Ingresar..."
+                        className="px-3 py-2 rounded-lg border border-oc-gray-200 bg-oc-gray-50 text-sm font-normal text-oc-gray-400 placeholder:text-oc-gray-400 focus:outline-none focus:ring-2 focus:ring-oc-blue-400"
+                      />
+                    </div>
+
+                    <div className="flex flex-col gap-1">
+                      <label className="font-montserrat font-semibold text-xs leading-5 text-oc-blue-500">
+                        Teléfono
+                      </label>
+                      <input
+                        type="tel"
+                        placeholder="011 0000 0000"
+                        className="px-3 py-2 rounded-lg border border-oc-gray-200 bg-oc-gray-50 text-sm font-normal text-oc-gray-400 placeholder:text-oc-gray-400 focus:outline-none focus:ring-2 focus:ring-oc-blue-400"
+                      />
+                    </div>
+
+                    <div className="flex flex-col gap-1">
+                      <label className="font-montserrat font-semibold text-xs leading-5 text-oc-blue-500">
+                        Email
+                      </label>
+                      <input
+                        type="email"
+                        placeholder="ejemplo@email.com"
+                        className="px-3 py-2 rounded-lg border border-oc-gray-200 bg-oc-gray-50 text-sm font-normal text-oc-gray-400 placeholder:text-oc-gray-400 focus:outline-none focus:ring-2 focus:ring-oc-blue-400"
+                      />
+                    </div>
+
+                    <button
+                      type="submit"
+                      className="w-full px-4 py-2 rounded-md bg-oc-blue-400 shadow-[0_1px_3px_0_rgba(0,0,0,0.20)] hover:bg-oc-blue-500 transition-colors"
+                    >
+                      <span className="font-montserrat font-semibold text-sm leading-5 text-white">
+                        Solicitar Demo
+                      </span>
+                    </button>
+                  </form>
+                </div>
+
+                <img
+                  src="https://api.builder.io/api/v1/image/assets/TEMP/db0d48068f167e0fd4220d2ad7c838b10e1ec7cc?width=504"
+                  alt="Robot with megaphone"
+                  className="w-[252px] h-auto object-contain"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
         <Footer />
       </div>
     </div>
