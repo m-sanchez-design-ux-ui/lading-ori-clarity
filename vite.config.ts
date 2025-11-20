@@ -9,7 +9,12 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
     fs: {
-      allow: ["./client", "./shared"],
+      // 🎯 SOLUCIÓN: Agregamos el directorio raíz '.' a la lista de permitidos (allow).
+      // Esto permite que Vite sirva archivos que están directamente en la raíz del proyecto, como index.html.
+      allow: ["./client", "./shared", "."], 
+      // Si el error persiste (lo cual es poco probable), podrías necesitar:
+      // allow: ["./client", "./shared", path.resolve(__dirname)],
+      
       deny: [".env", ".env.*", "*.{crt,pem}", "**/.git/**", "server/**"],
     },
   },
