@@ -135,38 +135,63 @@ export default function Index() {
           </div>
         </section>
 
-        <section className="w-full bg-oc-blue-50 py-[100px] px-10 relative overflow-hidden">
+        <section className="relative w-full bg-oc-blue-50 py-[100px] px-10 relative overflow-hidden">
+
+          <Bot
+            className="hidden lg:block float-icons absolute -right-20 xl:right-20 top-64 xl:top-44 text-[#D6E6FF] pointer-events-none"
+            size={238}
+            strokeWidth={1}
+          />
+                   
+          <MessageCircleCode
+            className="hidden lg:block float-icons absolute left-16 xl:left-40 top-96 text-[#D6E6FF] pointer-events-none"
+            size={109}
+            strokeWidth={1.5}
+          />
+
+          <BotMessageSquare
+            className="hidden lg:block float-icons absolute left-0 xl:left-7 top-6 text-[#D6E6FF] pointer-events-none"
+            size={132}
+            strokeWidth={1.5}
+          />
+
+          <MessageCircleMore
+            className="hidden lg:block float-icons absolute left-28 xl:-left-10 -bottom-24 xl:-bottom-16 text-[#D6E6FF] pointer-events-none"
+            size={212}
+            strokeWidth={1.5}
+          />
+
+          <MessageCircleMore
+            className="hidden lg:block float-icons absolute -right-20 bottom-24 text-[#D6E6FF] pointer-events-none"
+            size={212}
+            strokeWidth={1.5}
+          />
+
           <div className="max-w-[1200px] mx-auto">
             <div className="flex flex-col items-center gap-16">
-              <div className="flex flex-col md:flex-row justify-between items-center w-full max-w-[900px] gap-12 md:gap-8 relative">
+              <div className="z-10 flex flex-col md:flex-row justify-between items-center w-full max-w-[900px] gap-12 md:gap-8 relative">
                 <div className="flex flex-col items-center gap-6 w-full md:w-[600px] max-w-[600px]">
-                  <h2 className="font-montserrat font-bold text-2xl leading-9 text-oc-gray-700 w-full">
+                  <h2 className="font-montserrat font-bold text-2xl leading-9 text-oc-gray-700 w-full text-center md:text-left">
                     Presentamos Origin Clarity AI: Su asistente inteligente
                     corporativo.
                   </h2>
 
-                  <p className="font-montserrat font-normal text-base leading-7 text-oc-gray-700 w-full">
+                  <p className="font-montserrat font-normal text-base leading-7 text-oc-gray-700 w-full text-center md:text-left">
                     Una solución de IA de vanguardia diseñada para conectar su
                     ecosistema empresarial directamente con su documentación
                     oficial.
                   </p>
 
-                  <p className="font-montserrat font-semibold text-base leading-6 text-oc-blue-500 w-full">
+                  <p className="font-montserrat font-semibold text-base leading-6 text-oc-blue-500 w-full text-center md:text-left">
                     Integración Nativa: Funciona en los canales que sus equipos
                     y clientes ya usan: WhatsApp, Telegram y Microsoft Teams.
                   </p>
                 </div>
 
                 <img
-                  src="https://api.builder.io/api/v1/image/assets/TEMP/29b85e31374447a9abe1853f120da0594e850fa2?width=567"
+                  src="/assets/images/robot-01.png"
                   alt="AI Robot illustration"
-                  className="w-[283.333px] h-auto object-contain flex-shrink-0"
-                />
-
-                <Bot
-                  className="hidden lg:block absolute -right-20 top-32 text-[#D6E6FF] pointer-events-none"
-                  size={238}
-                  strokeWidth={1}
+                  className="hidden md:block float-icons w-[283.333px] h-auto object-contain flex-shrink-0"
                 />
               </div>
 
@@ -176,34 +201,13 @@ export default function Index() {
                   alt="Laptop showing Origin Clarity AI interface"
                   className="w-full h-auto object-contain"
                 />
-
-                <MessageCircleMore
-                  className="hidden lg:block absolute -right-24 -bottom-32 text-[#D6E6FF] pointer-events-none"
-                  size={212}
-                  strokeWidth={1.5}
-                />
-                <MessageCircleMore
-                  className="hidden lg:block absolute -left-16 -bottom-12 text-[#D6E6FF] pointer-events-none"
-                  size={212}
-                  strokeWidth={1.5}
-                />
-                <BotMessageSquare
-                  className="hidden md:block absolute left-7 top-6 text-[#D6E6FF] pointer-events-none"
-                  size={132}
-                  strokeWidth={1.5}
-                />
-                <MessageCircleCode
-                  className="hidden lg:block absolute right-32 -top-80 text-[#D6E6FF] pointer-events-none"
-                  size={109}
-                  strokeWidth={1.5}
+                <img
+                  src="/assets/images/robot-02.png"
+                  alt="Robot mascot"
+                  className="hidden md:block float-icons absolute -left-20 top-48  min-[800px]:-left-18 min-[800px]:top-56 min-[900px]:-left-24 min-[900px]:top-64 lg:-left-36 lg:top-80 w-[298px] h-auto object-contain self-end mr-0 md:mr-44"
                 />
               </div>
 
-              <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/c4aa262bdc09d4d316f097d30a5d0348ba6d4e04?width=596"
-                alt="Robot mascot"
-                className="w-[298px] h-auto object-contain self-end mr-0 md:mr-44"
-              />
             </div>
           </div>
         </section>
@@ -316,7 +320,7 @@ export default function Index() {
           </div>
         </section>
 
-        <section className="w-full bg-oc-blue-50 py-[100px] px-10 relative overflow-hidden">
+        <section className="relative w-full bg-oc-blue-50 py-[100px] px-10 relative overflow-hidden">
           <div className="max-w-[900px] mx-auto">
             <div className="flex flex-col gap-12">
               <div className="flex flex-col md:flex-row justify-center items-center gap-12 md:gap-12 z-10">
@@ -511,7 +515,7 @@ export default function Index() {
 
                     <button
                       type="submit"
-                      className="w-full px-4 py-2 rounded-md bg-oc-blue-400 shadow-[0_1px_3px_0_rgba(0,0,0,0.20)] hover:bg-oc-blue-500 transition-colors"
+                      className="w-full sm:w-fit mx-auto px-4 py-2 rounded-md bg-oc-blue-400 shadow-[0_1px_3px_0_rgba(0,0,0,0.20)] hover:bg-oc-blue-500 transition-colors"
                     >
                       <span className="font-montserrat font-semibold text-sm leading-5 text-white">
                         Solicitar Demo
