@@ -197,7 +197,7 @@ export default function Index() {
 
               <div className="relative w-full max-w-[900px]">
                 <img
-                  src="https://api.builder.io/api/v1/image/assets/TEMP/ebddae012588348e4a8612b4f0fdb44b011938f2?width=1800"
+                  src="/assets/images/laptop.png"
                   alt="Laptop showing Origin Clarity AI interface"
                   className="w-full h-auto object-contain"
                 />
