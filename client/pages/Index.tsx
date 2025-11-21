@@ -225,7 +225,7 @@ export default function Index() {
                     <img
                       src="/assets/images/coin.png"
                       alt="Coin icon"
-                      className="float-icons w-[100px] h-[100px]"
+                      className="w-[100px] h-[100px]"
                     />
                   </div>
                   <h3 className="font-montserrat font-semibold text-base leading-7 text-center text-oc-blue-500">
@@ -249,7 +249,7 @@ export default function Index() {
                     <img
                       src="/assets/images/medal.png"
                       alt="Medal icon"
-                      className="float-icons w-[100px] h-[100px]"
+                      className="w-[100px] h-[100px]"
                     />
                   </div>
                   <h3 className="font-montserrat font-semibold text-base leading-7 text-center text-oc-blue-500">
@@ -273,7 +273,7 @@ export default function Index() {
                     <img
                       src="/assets/images/trophy.png"
                       alt="Trophy icon"
-                      className="float-icons w-[100px] h-[100px]"
+                      className="w-[100px] h-[100px]"
                     />
                   </div>
                   <h3 className="font-montserrat font-semibold text-base leading-7 text-center text-oc-blue-500">
@@ -297,7 +297,7 @@ export default function Index() {
                     <img
                       src="/assets/images/rocket.png"
                       alt="Rocket icon"
-                      className="float-icons w-[100px] h-[100px]"
+                      className="w-[100px] h-[100px]"
                     />
                   </div>
                   <h3 className="font-montserrat font-semibold text-base leading-7 text-center text-oc-blue-500">
