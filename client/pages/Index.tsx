@@ -433,10 +433,10 @@ export default function Index() {
               <div className="flex flex-col lg:flex-row items-center gap-12">
                 <div className="flex flex-row flex-nowrap gap-12 w-full max-w-[600px]">
                   <div className="flex flex-col gap-7 flex-1 max-w-[600px]">
-                    <h2 className="font-montserrat font-bold text-2xl leading-9 text-oc-gray-700">
+                    <h2 className="font-montserrat font-bold text-2xl leading-9 text-oc-gray-700 text-center md:text-left">
                       ¿Listo para el futuro? Hablemos sobre su implementación
                     </h2>
-                    <p className="font-montserrat font-normal text-base leading-6 text-oc-gray-800">
+                    <p className="font-montserrat font-normal text-base leading-6 text-oc-gray-800 text-center md:text-left">
                       <span className="font-bold text-brand-primary">
                         Origin Clarity AI
                       </span>{" "}
