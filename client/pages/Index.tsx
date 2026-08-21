@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { Button } from "@/components/ui/button";
 import {
   Bot,
   BotMessageSquare,
@@ -13,11 +14,11 @@ export default function Index() {
 
       <div className="relative flex flex-col items-center w-full bg-white font-montserrat">
         <Header />
-        <section className="relative w-full bg-gradient-to-r from-[#DAEDFF] via-[#F8FAFC] to-[#DAEDFF] px-10 py-[100px] relative overflow-hidden flex flex-col items-center">
+        <section className="relative w-full bg-gradient-to-r from-surface-light via-slate-50 to-surface-light px-10 py-[100px] relative overflow-hidden flex flex-col items-center">
           <MessageCircleMore
-            className="hidden lg:block float-icons absolute left-6 -top-12 text-[#D6E6FF] pointer-events-none"
+            className="hidden lg:block float-icons absolute left-6 -top-12 text-brand-bg pointer-events-none"
             size={113}
-            strokeWidth={1.5}
+            strokeWidth={1}
           />
           <div className="max-w-[1440px] mx-auto w-full mt-0 pt-0">
             <div className="flex flex-col lg:flex-row justify-between items-center gap-12 lg:gap-8">
@@ -34,23 +35,20 @@ export default function Index() {
                   Telegram.
                 </p>
 
-                <button className="w-full sm:w-auto px-6 py-3 rounded-lg bg-oc-blue-400 shadow-[0_1px_3px_0_rgba(0,0,0,0.20)] hover:bg-oc-blue-500 transition-colors">
-                  <span className="font-montserrat font-semibold text-lg leading-7 text-white">
-                    SOLICITAR DEMO
-                  </span>
-                </button>
+                <Button variant="brand" size="large" className="w-full sm:w-auto">
+                  SOLICITAR DEMO
+                </Button>
               </div>
 
               <div className="relative w-full max-w-[600px] lg:max-w-[448px] lg:flex-shrink-0">
                 <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-[0_0_0_1px_#E2E8F0,0_20px_25px_-5px_rgba(0,0,0,0.10),0_8px_10px_-6px_rgba(0,0,0,0.10)] relative z-10">
                   <div className="flex flex-col items-center gap-4">
                     <div className="flex flex-col items-center justify-center">
-
-                      <img  src="/assets/images/IsoLogoOriClarity.svg" alt="Origin Clarity AI"  className="w-10 h-10" />
-
-                      <span className="font-montserrat font-semibold text-sm leading-[32.813px] tracking-[-0.586px] bg-gradient-to-b from-[#4F8CFF] to-[#003A99] bg-clip-text text-transparent">
-                        ORIGIN CLARITY AI
-                      </span>
+                      <img
+                        src="/assets/images/LogoOriClarityStacked.svg"
+                        alt="Origin Clarity AI"
+                        className="w-48 h-auto"
+                      />
                     </div>
 
                     <p className="font-montserrat font-normal text-base leading-6 text-center text-oc-gray-700">
@@ -81,27 +79,27 @@ export default function Index() {
                 </div>
 
                 <BotMessageSquare
-                  className="hidden lg:block float-icons absolute -right-16 -bottom-20 text-[#D6E6FF] pointer-events-none"
+                  className="hidden lg:block float-icons absolute -right-16 -bottom-20 text-brand-bg pointer-events-none"
                   size={132}
-                  strokeWidth={1.5}
-                />
-                <Bot
-                  className="hidden lg:block float-icons absolute -left-24 xl:-left-64 -top-20 text-[#D6E6FF] pointer-events-none"
-                  size={181}
                   strokeWidth={1}
                 />
+                <Bot
+                  className="hidden lg:block float-icons absolute -left-24 xl:-left-64 -top-20 text-brand-bg pointer-events-none"
+                  size={181}
+                  strokeWidth={0.75}
+                />
                 <MessageCircleMore
-                  className="hidden lg:block float-icons absolute -right-24 -top-32 text-[#D6E6FF] pointer-events-none"
+                  className="hidden lg:block float-icons absolute -right-24 -top-32 text-brand-bg pointer-events-none"
                   size={113}
-                  strokeWidth={1.5}
+                  strokeWidth={1}
                 />
                 <MessageCircleCode
-                  className="hidden lg:block float-icons absolute -left-40 -bottom-14 text-[#D6E6FF] pointer-events-none"
+                  className="hidden lg:block float-icons absolute -left-40 -bottom-14 text-brand-bg pointer-events-none"
                   size={79}
-                  strokeWidth={1.5}
+                  strokeWidth={1.25}
                 />
                 <MessageCircle
-                  className="hidden lg:block float-icons absolute -left-10 xl:-left-16 top-28 text-[#D6E6FF] pointer-events-none"
+                  className="hidden lg:block float-icons absolute -left-10 xl:-left-16 top-28 text-brand-bg pointer-events-none"
                   size={131}
                   strokeWidth={1}
                 />
@@ -135,36 +133,36 @@ export default function Index() {
           </div>
         </section>
 
-        <section className="relative w-full bg-oc-blue-50 py-[100px] px-10 relative overflow-hidden">
+        <section className="relative w-full bg-surface-light py-[100px] px-10 relative overflow-hidden">
 
           <Bot
-            className="hidden lg:block float-icons absolute -right-20 xl:right-20 top-64 xl:top-44 text-[#D6E6FF] pointer-events-none"
+            className="hidden lg:block float-icons absolute -right-20 xl:right-20 top-64 xl:top-44 text-brand-bg pointer-events-none"
             size={238}
-            strokeWidth={1}
+            strokeWidth={0.65}
           />
                    
           <MessageCircleCode
-            className="hidden lg:block float-icons absolute left-16 xl:left-40 top-96 text-[#D6E6FF] pointer-events-none"
+            className="hidden lg:block float-icons absolute left-16 xl:left-40 top-96 text-brand-bg pointer-events-none"
             size={109}
-            strokeWidth={1.5}
+            strokeWidth={1.25}
           />
 
           <BotMessageSquare
-            className="hidden lg:block float-icons absolute left-0 xl:left-7 top-6 text-[#D6E6FF] pointer-events-none"
+            className="hidden lg:block float-icons absolute left-0 xl:left-7 top-6 text-brand-bg pointer-events-none"
             size={132}
-            strokeWidth={1.5}
+            strokeWidth={1}
           />
 
           <MessageCircleMore
-            className="hidden lg:block float-icons absolute left-28 xl:-left-10 -bottom-24 xl:-bottom-16 text-[#D6E6FF] pointer-events-none"
+            className="hidden lg:block float-icons absolute left-28 xl:-left-10 -bottom-24 xl:-bottom-16 text-brand-bg pointer-events-none"
             size={212}
-            strokeWidth={1.5}
+            strokeWidth={0.75}
           />
 
           <MessageCircleMore
-            className="hidden lg:block float-icons absolute -right-20 bottom-24 text-[#D6E6FF] pointer-events-none"
+            className="hidden lg:block float-icons absolute -right-20 bottom-24 text-brand-bg pointer-events-none"
             size={212}
-            strokeWidth={1.5}
+            strokeWidth={0.75}
           />
 
           <div className="max-w-[1200px] mx-auto">
@@ -182,7 +180,7 @@ export default function Index() {
                     oficial.
                   </p>
 
-                  <p className="font-montserrat font-semibold text-base leading-6 text-oc-blue-500 w-full text-center md:text-left">
+                  <p className="font-montserrat font-semibold text-base leading-6 text-brand-primary w-full text-center md:text-left">
                     Integración Nativa: Funciona en los canales que sus equipos
                     y clientes ya usan: WhatsApp, Telegram y Microsoft Teams.
                   </p>
@@ -220,7 +218,7 @@ export default function Index() {
               </h2>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-[1200px]">
-                <div className="flex flex-col items-center gap-4 p-6 rounded-xl border border-[#E2E8F0] bg-white shadow-sm md:min-h-[360px] lg:min-h-[406px]">
+                <div className="flex flex-col items-center gap-4 p-6 rounded-xl border border-slate-200 bg-white shadow-sm md:min-h-[360px] lg:min-h-[406px]">
                   <div className="w-[100px] h-[100px] flex items-center justify-center">
                     <img
                       src="/assets/images/coin.png"
@@ -228,7 +226,7 @@ export default function Index() {
                       className="w-[100px] h-[100px]"
                     />
                   </div>
-                  <h3 className="font-montserrat font-semibold text-base leading-7 text-center text-oc-blue-500">
+                  <h3 className="font-montserrat font-semibold text-base leading-7 text-center text-brand-primary">
                     Transformación Económica y ROI Acelerado
                   </h3>
                   <div className="flex flex-col gap-3 w-full max-w-full lg:max-w-[243px]">
@@ -244,7 +242,7 @@ export default function Index() {
                   </div>
                 </div>
 
-                <div className="flex flex-col items-center gap-4 p-6 rounded-xl border border-[#E2E8F0] bg-white shadow-sm md:min-h-[360px] lg:min-h-[406px]">
+                <div className="flex flex-col items-center gap-4 p-6 rounded-xl border border-slate-200 bg-white shadow-sm md:min-h-[360px] lg:min-h-[406px]">
                   <div className="w-[100px] h-[100px] flex items-center justify-center">
                     <img
                       src="/assets/images/medal.png"
@@ -252,7 +250,7 @@ export default function Index() {
                       className="w-[100px] h-[100px]"
                     />
                   </div>
-                  <h3 className="font-montserrat font-semibold text-base leading-7 text-center text-oc-blue-500">
+                  <h3 className="font-montserrat font-semibold text-base leading-7 text-center text-brand-primary">
                     Liderazgo de Marca y Prestigio
                   </h3>
                   <div className="flex flex-col gap-3 w-full max-w-full lg:max-w-[243px]">
@@ -268,7 +266,7 @@ export default function Index() {
                   </div>
                 </div>
 
-                <div className="flex flex-col items-center gap-4 p-6 rounded-xl border border-[#E2E8F0] bg-white shadow-sm md:min-h-[360px] lg:min-h-[406px]">
+                <div className="flex flex-col items-center gap-4 p-6 rounded-xl border border-slate-200 bg-white shadow-sm md:min-h-[360px] lg:min-h-[406px]">
                   <div className="w-[100px] h-[100px] flex items-center justify-center">
                     <img
                       src="/assets/images/trophy.png"
@@ -276,7 +274,7 @@ export default function Index() {
                       className="w-[100px] h-[100px]"
                     />
                   </div>
-                  <h3 className="font-montserrat font-semibold text-base leading-7 text-center text-oc-blue-500">
+                  <h3 className="font-montserrat font-semibold text-base leading-7 text-center text-brand-primary">
                     Excelencia Operativa Optimizada
                   </h3>
                   <div className="flex flex-col gap-3 w-full max-w-full lg:max-w-[243px]">
@@ -292,7 +290,7 @@ export default function Index() {
                   </div>
                 </div>
 
-                <div className="flex flex-col items-center gap-4 p-6 rounded-xl border border-[#E2E8F0] bg-white shadow-sm md:min-h-[360px] lg:min-h-[406px]">
+                <div className="flex flex-col items-center gap-4 p-6 rounded-xl border border-slate-200 bg-white shadow-sm md:min-h-[360px] lg:min-h-[406px]">
                   <div className="w-[100px] h-[100px] flex items-center justify-center">
                     <img
                       src="/assets/images/rocket.png"
@@ -300,7 +298,7 @@ export default function Index() {
                       className="w-[100px] h-[100px]"
                     />
                   </div>
-                  <h3 className="font-montserrat font-semibold text-base leading-7 text-center text-oc-blue-500">
+                  <h3 className="font-montserrat font-semibold text-base leading-7 text-center text-brand-primary">
                     Tecnología de Vanguardia ('State of the Art')
                   </h3>
                   <div className="flex flex-col gap-3 w-full max-w-full lg:max-w-[243px]">
@@ -320,7 +318,7 @@ export default function Index() {
           </div>
         </section>
 
-        <section className="relative w-full bg-oc-blue-50 py-[100px] px-10 relative overflow-hidden">
+        <section className="relative w-full bg-surface-light py-[100px] px-10 relative overflow-hidden">
           <div className="max-w-[900px] mx-auto">
             <div className="flex flex-col gap-12">
               <div className="flex flex-col md:flex-row justify-center items-center gap-12 md:gap-12 z-10">
@@ -334,11 +332,11 @@ export default function Index() {
                     Una inversión en inteligencia, No en riesgo.
                   </h2>
                   <p className="font-montserrat font-normal text-base leading-6 text-oc-gray-700 text-center md:text-left">
-                    <span className="font-bold text-oc-blue-400">
+                    <span className="font-bold text-brand-light">
                       Origin Clarity AI
                     </span>{" "}
                     utiliza la{" "}
-                    <span className="font-bold text-oc-blue-400">
+                    <span className="font-bold text-brand-light">
                       Arquitectura RAG
                     </span>
                     , el estándar de oro para la IA empresarial, asegurando que
@@ -349,13 +347,13 @@ export default function Index() {
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full z-10">
-                <div className="flex flex-col items-center gap-4 p-6 rounded-xl border border-[#E2E8F0] bg-white shadow-sm">
+                <div className="flex flex-col items-center gap-4 p-6 rounded-xl border border-slate-200 bg-white shadow-sm">
                   <img
                     src="/assets/images/quote-person-01.png"
                     alt="Client testimonial"
-                    className="w-[120px] h-[120px] rounded-full border-[1.5px] border-oc-blue-400 object-cover"
+                    className="w-[120px] h-[120px] rounded-full border-[1.5px] border-brand-light object-cover"
                   />
-                  <blockquote className="font-montserrat font-medium text-base leading-6 text-center text-oc-blue-400">
+                  <blockquote className="font-montserrat font-medium text-base leading-6 text-center text-brand-light">
                     "Excelente precisión y reducción de tiempos de respuesta.
                     Una herramienta clave para nuestro crecimiento."
                   </blockquote>
@@ -364,13 +362,13 @@ export default function Index() {
                   </p>
                 </div>
 
-                <div className="flex flex-col items-center gap-4 p-6 rounded-xl border border-[#E2E8F0] bg-white shadow-sm">
+                <div className="flex flex-col items-center gap-4 p-6 rounded-xl border border-slate-200 bg-white shadow-sm">
                   <img
                     src="/assets/images/quote-person-02.png"
                     alt="Client testimonial"
-                    className="w-[120px] h-[120px] rounded-full border-[1.5px] border-oc-blue-400 object-cover"
+                    className="w-[120px] h-[120px] rounded-full border-[1.5px] border-brand-light object-cover"
                   />
-                  <blockquote className="font-montserrat font-medium text-base leading-6 text-center text-oc-blue-400">
+                  <blockquote className="font-montserrat font-medium text-base leading-6 text-center text-brand-light">
                     "Implementación rápida y segura. El impacto en atención al
                     cliente fue inmediato."
                   </blockquote>
@@ -379,13 +377,13 @@ export default function Index() {
                   </p>
                 </div>
 
-                <div className="flex flex-col items-center gap-4 p-6 rounded-xl border border-[#E2E8F0] bg-white shadow-sm">
+                <div className="flex flex-col items-center gap-4 p-6 rounded-xl border border-slate-200 bg-white shadow-sm">
                   <img
                     src="/assets/images/quote-person-03.png"
                     alt="Client testimonial"
-                    className="w-[120px] h-[120px] rounded-full border-[1.5px] border-oc-blue-400 object-cover"
+                    className="w-[120px] h-[120px] rounded-full border-[1.5px] border-brand-light object-cover"
                   />
-                  <blockquote className="font-montserrat font-medium text-base leading-6 text-center text-oc-blue-400">
+                  <blockquote className="font-montserrat font-medium text-base leading-6 text-center text-brand-light">
                     "Integración perfecta con nuestros canales. Altamente
                     recomendado para empresas serias."
                   </blockquote>
@@ -398,34 +396,34 @@ export default function Index() {
           </div>
 
           <MessageCircleCode
-            className="hidden lg:block float-icons absolute left-10 xl:left-40 top-64 xl:top-72 text-[#D6E6FF] pointer-events-none"
+            className="hidden lg:block float-icons absolute left-10 xl:left-40 top-64 xl:top-72 text-brand-bg pointer-events-none"
             size={91}
-            strokeWidth={1.5}
+            strokeWidth={1.25}
           />
           <BotMessageSquare
-            className="hidden lg:block float-icons absolute -right-14 xl:right-20 top-12 text-[#D6E6FF] pointer-events-none"
+            className="hidden lg:block float-icons absolute -right-14 xl:right-20 top-12 text-brand-bg pointer-events-none"
             size={168}
-            strokeWidth={1.5}
+            strokeWidth={0.75}
           />
           <MessageCircleMore
-            className="hidden lg:block float-icons absolute -left-8 -bottom-12 text-[#D6E6FF] pointer-events-none"
+            className="hidden lg:block float-icons absolute -left-8 -bottom-12 text-brand-bg pointer-events-none"
             size={168}
-            strokeWidth={1.5}
-          />
-          <MessageCircleMore
-            className="hidden lg:block float-icons absolute -right-16 bottom-56 text-[#D6E6FF] pointer-events-none"
-            size={168}
-            strokeWidth={1.5}
-          />
-          <Bot
-            className="hidden lg:block float-icons absolute -left-20 xl:left-10 top-8 text-[#D6E6FF] pointer-events-none"
-            size={173}
             strokeWidth={1}
           />
+          <MessageCircleMore
+            className="hidden lg:block float-icons absolute -right-16 bottom-56 text-brand-bg pointer-events-none"
+            size={168}
+            strokeWidth={0.85}
+          />
+          <Bot
+            className="hidden lg:block float-icons absolute -left-20 xl:left-10 top-8 text-brand-bg pointer-events-none"
+            size={173}
+            strokeWidth={0.75}
+          />
           <MessageCircleCode
-            className="hidden lg:block float-icons absolute right-40 bottom-10 xl:bottom-20 text-[#D6E6FF] pointer-events-none"
+            className="hidden lg:block float-icons absolute right-40 bottom-10 xl:bottom-20 text-brand-bg pointer-events-none"
             size={78}
-            strokeWidth={1.5}
+            strokeWidth={1.25}
           />
         </section>
 
@@ -439,7 +437,7 @@ export default function Index() {
                       ¿Listo para el futuro? Hablemos sobre su implementación
                     </h2>
                     <p className="font-montserrat font-normal text-base leading-6 text-oc-gray-700">
-                      <span className="font-bold text-oc-blue-400">
+                      <span className="font-bold text-brand-light">
                         Origin Clarity AI
                       </span>{" "}
                       es su socio estratégico para desbloquear un nuevo nivel de
@@ -456,71 +454,71 @@ export default function Index() {
               </div>
 
               <div className="flex flex-col lg:flex-row items-end gap-12">
-                <div className="flex-1 max-w-[600px] w-full p-6 rounded-xl border border-[#E2E8F0] bg-white shadow-sm mx-auto">
+                <div className="flex-1 max-w-[600px] w-full p-6 rounded-xl border border-slate-200 bg-white shadow-sm mx-auto">
                   <form className="flex flex-col gap-6">
                     <div className="flex flex-col gap-1">
-                      <label className="font-montserrat font-semibold text-xs leading-5 text-oc-blue-500">
+                      <label className="font-montserrat font-semibold text-xs leading-5 text-brand-primary">
                         Nombre
                       </label>
                       <input
                         type="text"
                         placeholder="Ingresar..."
-                        className="px-3 py-2 rounded-lg border border-oc-gray-200 bg-oc-gray-50 text-sm font-normal text-oc-gray-400 placeholder:text-oc-gray-400 focus:outline-none focus:ring-2 focus:ring-oc-blue-400"
+                        className="px-3 py-2 rounded-lg border border-oc-gray-200 bg-oc-gray-50 text-sm font-normal text-oc-gray-400 placeholder:text-oc-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-light"
                       />
                     </div>
 
                     <div className="flex flex-col gap-1">
-                      <label className="font-montserrat font-semibold text-xs leading-5 text-oc-blue-500">
+                      <label className="font-montserrat font-semibold text-xs leading-5 text-brand-primary">
                         Empresa de donde nos contactas
                       </label>
                       <input
                         type="text"
                         placeholder="Ingresar..."
-                        className="px-3 py-2 rounded-lg border border-oc-gray-200 bg-oc-gray-50 text-sm font-normal text-oc-gray-400 placeholder:text-oc-gray-400 focus:outline-none focus:ring-2 focus:ring-oc-blue-400"
+                        className="px-3 py-2 rounded-lg border border-oc-gray-200 bg-oc-gray-50 text-sm font-normal text-oc-gray-400 placeholder:text-oc-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-light"
                       />
                     </div>
 
                     <div className="flex flex-col gap-1">
-                      <label className="font-montserrat font-semibold text-xs leading-5 text-oc-blue-500">
+                      <label className="font-montserrat font-semibold text-xs leading-5 text-brand-primary">
                         Cargo en la empresa
                       </label>
                       <input
                         type="text"
                         placeholder="Ingresar..."
-                        className="px-3 py-2 rounded-lg border border-oc-gray-200 bg-oc-gray-50 text-sm font-normal text-oc-gray-400 placeholder:text-oc-gray-400 focus:outline-none focus:ring-2 focus:ring-oc-blue-400"
+                        className="px-3 py-2 rounded-lg border border-oc-gray-200 bg-oc-gray-50 text-sm font-normal text-oc-gray-400 placeholder:text-oc-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-light"
                       />
                     </div>
 
                     <div className="flex flex-col gap-1">
-                      <label className="font-montserrat font-semibold text-xs leading-5 text-oc-blue-500">
+                      <label className="font-montserrat font-semibold text-xs leading-5 text-brand-primary">
                         Teléfono
                       </label>
                       <input
                         type="tel"
                         placeholder="011 0000 0000"
-                        className="px-3 py-2 rounded-lg border border-oc-gray-200 bg-oc-gray-50 text-sm font-normal text-oc-gray-400 placeholder:text-oc-gray-400 focus:outline-none focus:ring-2 focus:ring-oc-blue-400"
+                        className="px-3 py-2 rounded-lg border border-oc-gray-200 bg-oc-gray-50 text-sm font-normal text-oc-gray-400 placeholder:text-oc-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-light"
                       />
                     </div>
 
                     <div className="flex flex-col gap-1">
-                      <label className="font-montserrat font-semibold text-xs leading-5 text-oc-blue-500">
+                      <label className="font-montserrat font-semibold text-xs leading-5 text-brand-primary">
                         Email
                       </label>
                       <input
                         type="email"
                         placeholder="ejemplo@email.com"
-                        className="px-3 py-2 rounded-lg border border-oc-gray-200 bg-oc-gray-50 text-sm font-normal text-oc-gray-400 placeholder:text-oc-gray-400 focus:outline-none focus:ring-2 focus:ring-oc-blue-400"
+                        className="px-3 py-2 rounded-lg border border-oc-gray-200 bg-oc-gray-50 text-sm font-normal text-oc-gray-400 placeholder:text-oc-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-light"
                       />
                     </div>
 
-                    <button
+                    <Button
                       type="submit"
-                      className="w-full sm:w-fit mx-auto px-4 py-2 rounded-md bg-oc-blue-400 shadow-[0_1px_3px_0_rgba(0,0,0,0.20)] hover:bg-oc-blue-500 transition-colors"
+                      variant="brand"
+                      size="regular"
+                      className="w-full sm:w-fit mx-auto"
                     >
-                      <span className="font-montserrat font-semibold text-sm leading-5 text-white">
-                        Solicitar Demo
-                      </span>
-                    </button>
+                      Solicitar Demo
+                    </Button>
                   </form>
                 </div>
 

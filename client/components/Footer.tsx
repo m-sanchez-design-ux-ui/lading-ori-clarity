@@ -3,18 +3,17 @@ import { Linkedin, Twitter, Youtube } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-oc-blue-400 py-[100px] px-10">
+    <footer className="w-full bg-[linear-gradient(180deg,#6699FF_-70.22%,#003399_113.8%)] py-[100px] px-10">
       <div className="max-w-[1440px] mx-auto">
         <div className="flex flex-col gap-12">
           <div className="flex flex-col lg:flex-row justify-between items-center lg:items-start gap-8">
             <div className="flex flex-col gap-8 lg:gap-4 w-full md:w-[280px]">
               <Link to="/" className="flex flex-col lg:flex-row items-center gap-2 mx-auto lg:mx-0">
-                <img src="/assets/images/IsoLogoOriClarityWhite.svg" alt="Origin Clarity AI" className="w-9 h-9" />
-                <div className="flex flex-col">
-                  <span className="font-montserrat font-semibold text-base leading-7 tracking-[-0.5px] text-white">
-                    ORIGIN CLARITY AI
-                  </span>
-                </div>
+                <img
+                  src="/assets/images/LogoOriClarityHorizontalWhite.svg"
+                  alt="Origin Clarity AI"
+                  className="h-9 w-auto"
+                />
               </Link>
 
               <div className="flex flex-col">
@@ -73,24 +72,24 @@ export default function Footer() {
               <div className="flex items-center gap-3 w-fit mx-auto">
                 <a
                   href="#"
-                  className="flex items-center justify-center w-8 h-8 rounded-md bg-white hover:bg-gray-100 transition-colors"
+                  className="flex items-center justify-center w-8 h-8 p-1 rounded-lg bg-white hover:bg-gray-100 transition-colors"
                   aria-label="LinkedIn"
                 >
-                  <Linkedin className="w-5 h-5 text-oc-blue-400" />
+                  <Linkedin className="w-5 h-5 text-brand-primary" />
                 </a>
                 <a
                   href="#"
-                  className="flex items-center justify-center w-8 h-8 rounded-md bg-white hover:bg-gray-100 transition-colors"
+                  className="flex items-center justify-center w-8 h-8 p-1 rounded-lg bg-white hover:bg-gray-100 transition-colors"
                   aria-label="Twitter"
                 >
-                  <Twitter className="w-5 h-5 text-oc-blue-400" />
+                  <Twitter className="w-5 h-5 text-brand-primary" />
                 </a>
                 <a
                   href="#"
-                  className="flex items-center justify-center w-8 h-8 rounded-md bg-white hover:bg-gray-100 transition-colors"
+                  className="flex items-center justify-center w-8 h-8 p-1 rounded-lg bg-white hover:bg-gray-100 transition-colors"
                   aria-label="YouTube"
                 >
-                  <Youtube className="w-5 h-5 text-oc-blue-400" />
+                  <Youtube className="w-5 h-5 text-brand-primary" />
                 </a>
               </div>
             </div>
