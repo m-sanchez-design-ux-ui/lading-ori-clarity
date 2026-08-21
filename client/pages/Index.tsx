@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { Button } from "@/components/ui/button";
 import {
   Bot,
   BotMessageSquare,
@@ -13,47 +14,44 @@ export default function Index() {
 
       <div className="relative flex flex-col items-center w-full bg-white font-montserrat">
         <Header />
-        <section className="relative w-full bg-gradient-to-r from-[#DAEDFF] via-[#F8FAFC] to-[#DAEDFF] px-10 py-[100px] relative overflow-hidden flex flex-col items-center">
+        <section className="relative w-full bg-[linear-gradient(100deg,#BFD3FA_-7.02%,#F4F7FD_34.96%,#F4F7FD_72.12%,#BFD3FA_104.75%)] px-10 py-[100px] overflow-hidden flex flex-col items-center">
           <MessageCircleMore
-            className="hidden lg:block float-icons absolute left-6 -top-12 text-[#D6E6FF] pointer-events-none"
+            className="hidden lg:block float-icons absolute left-6 -top-12 text-brand-bg pointer-events-none"
             size={113}
-            strokeWidth={1.5}
+            strokeWidth={1}
           />
           <div className="max-w-[1440px] mx-auto w-full mt-0 pt-0">
             <div className="flex flex-col lg:flex-row justify-between items-center gap-12 lg:gap-8">
               <div className="z-10 flex flex-col items-start gap-6 w-full lg:w-[600px] max-w-[600px]">
-                <h1 className="font-montserrat font-extrabold text-[32px] sm:text-[40px] leading-[1.275] tracking-[0.8px] text-oc-gray-700">
+                <h1 className="font-montserrat font-extrabold text-[32px] sm:text-[40px] leading-[1.275] tracking-[0.8px] text-title">
                   Origin Clarity AI: El Experto Corporativo 24/7 que Conecta su
                   Negocio.
                 </h1>
 
-                <p className="font-montserrat font-normal text-base leading-7 text-oc-gray-700">
+                <p className="font-montserrat font-normal text-base leading-7 text-paragraph">
                   Transforme su conocimiento fragmentado en un Asistente
                   Inteligente. Productividad inmediata, costos reducidos y
                   experiencia del cliente superior en WhatsApp, Teams y
                   Telegram.
                 </p>
 
-                <button className="w-full sm:w-auto px-6 py-3 rounded-lg bg-oc-blue-400 shadow-[0_1px_3px_0_rgba(0,0,0,0.20)] hover:bg-oc-blue-500 transition-colors">
-                  <span className="font-montserrat font-semibold text-lg leading-7 text-white">
-                    SOLICITAR DEMO
-                  </span>
-                </button>
+                <Button variant="brand" size="large" className="w-full sm:w-auto">
+                  SOLICITAR DEMO
+                </Button>
               </div>
 
               <div className="relative w-full max-w-[600px] lg:max-w-[448px] lg:flex-shrink-0">
-                <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-[0_0_0_1px_#E2E8F0,0_20px_25px_-5px_rgba(0,0,0,0.10),0_8px_10px_-6px_rgba(0,0,0,0.10)] relative z-10">
+                <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-[0_20px_25px_-5px_rgba(0,0,0,0.10),0_8px_10px_-6px_rgba(0,0,0,0.10)] relative z-10 border border-oc-gray-200">
                   <div className="flex flex-col items-center gap-4">
                     <div className="flex flex-col items-center justify-center">
-
-                      <img  src="/assets/images/IsoLogoOriClarity.svg" alt="Origin Clarity AI"  className="w-10 h-10" />
-
-                      <span className="font-montserrat font-semibold text-sm leading-[32.813px] tracking-[-0.586px] bg-gradient-to-b from-[#4F8CFF] to-[#003A99] bg-clip-text text-transparent">
-                        ORIGIN CLARITY AI
-                      </span>
+                      <img
+                        src="/assets/images/LogoOriClarityStacked.svg"
+                        alt="Origin Clarity AI"
+                        className="w-48 h-auto"
+                      />
                     </div>
 
-                    <p className="font-montserrat font-normal text-base leading-6 text-center text-oc-gray-700">
+                    <p className="font-montserrat font-normal text-base leading-6 text-center text-paragraph">
                       Inteligencia aplicada
                       <br />
                       a su ecosistema corporativo.
@@ -63,16 +61,16 @@ export default function Index() {
                     </p>
 
                     <div className="flex justify-center items-start gap-4 w-full">
-                      <div className="flex-1 flex flex-col items-center gap-2 p-4 rounded-lg border border-oc-gray-300">
+                      <div className="flex-1 flex flex-col items-center gap-2 p-4 rounded-lg border border-oc-gray-200">
                         <img src="/assets/images/Icon-ws.svg" alt="WhatsApp" className="w-12 h-12" />
-                        <span className="font-montserrat font-semibold text-xs min-[425px]:text-sm text-oc-gray-700">
+                        <span className="font-montserrat font-semibold text-xs min-[425px]:text-sm text-paragraph">
                           WhatsApp
                         </span>
                       </div>
 
-                      <div className="flex-1 flex flex-col items-center gap-2 p-4 rounded-lg border border-oc-gray-300">
+                      <div className="flex-1 flex flex-col items-center gap-2 p-4 rounded-lg border border-oc-gray-200">
                         <img src="/assets/images/Icon-teams.svg" alt="WhatsApp" className="w-12 h-12" />
-                        <span className="font-montserrat font-semibold text-xs min-[425px]:text-sm text-oc-gray-700">
+                        <span className="font-montserrat font-semibold text-xs min-[425px]:text-sm text-paragraph">
                           Teams
                         </span>
                       </div>
@@ -81,27 +79,27 @@ export default function Index() {
                 </div>
 
                 <BotMessageSquare
-                  className="hidden lg:block float-icons absolute -right-16 -bottom-20 text-[#D6E6FF] pointer-events-none"
+                  className="hidden lg:block float-icons absolute -right-16 -bottom-20 text-brand-bg pointer-events-none"
                   size={132}
-                  strokeWidth={1.5}
-                />
-                <Bot
-                  className="hidden lg:block float-icons absolute -left-24 xl:-left-64 -top-20 text-[#D6E6FF] pointer-events-none"
-                  size={181}
                   strokeWidth={1}
                 />
+                <Bot
+                  className="hidden lg:block float-icons absolute -left-24 xl:-left-64 -top-20 text-brand-bg pointer-events-none"
+                  size={181}
+                  strokeWidth={0.75}
+                />
                 <MessageCircleMore
-                  className="hidden lg:block float-icons absolute -right-24 -top-32 text-[#D6E6FF] pointer-events-none"
+                  className="hidden lg:block float-icons absolute -right-24 -top-32 text-brand-bg pointer-events-none"
                   size={113}
-                  strokeWidth={1.5}
+                  strokeWidth={1}
                 />
                 <MessageCircleCode
-                  className="hidden lg:block float-icons absolute -left-40 -bottom-14 text-[#D6E6FF] pointer-events-none"
+                  className="hidden lg:block float-icons absolute -left-40 -bottom-14 text-brand-bg pointer-events-none"
                   size={79}
-                  strokeWidth={1.5}
+                  strokeWidth={1.25}
                 />
                 <MessageCircle
-                  className="hidden lg:block float-icons absolute -left-10 xl:-left-16 top-28 text-[#D6E6FF] pointer-events-none"
+                  className="hidden lg:block float-icons absolute -left-10 xl:-left-16 top-28 text-brand-bg pointer-events-none"
                   size={131}
                   strokeWidth={1}
                 />
@@ -120,11 +118,11 @@ export default function Index() {
               />
 
               <div className="flex flex-col items-start gap-6 w-full md:w-[600px] max-w-[600px]">
-                <h2 className="font-montserrat font-bold text-2xl leading-9 text-oc-gray-700 text-center md:text-left w-full max-w-[400px] md:max-w-full mx-auto">
+                <h2 className="font-montserrat font-bold text-2xl leading-9 text-title text-center md:text-left w-full max-w-[400px] md:max-w-full mx-auto">
                   ¿Su conocimiento está siendo su mayor cuello de botella?
                 </h2>
 
-                <p className="font-montserrat font-normal text-base leading-7 text-oc-gray-700 text-center md:text-left">
+                <p className="font-montserrat font-normal text-base leading-7 text-paragraph text-center md:text-left">
                   En el mercado actual, la información es su activo más
                   valioso, pero a menudo se encuentra inaccesible, dispersa y
                   desaprovechada. Sus equipos invierten hasta un 20% de su
@@ -135,54 +133,54 @@ export default function Index() {
           </div>
         </section>
 
-        <section className="relative w-full bg-oc-blue-50 py-[100px] px-10 relative overflow-hidden">
+        <section className="relative w-full bg-surface-light py-[100px] px-10 overflow-hidden">
 
           <Bot
-            className="hidden lg:block float-icons absolute -right-20 xl:right-20 top-64 xl:top-44 text-[#D6E6FF] pointer-events-none"
+            className="hidden lg:block float-icons absolute -right-20 xl:right-20 top-64 xl:top-44 text-brand-bg pointer-events-none"
             size={238}
-            strokeWidth={1}
+            strokeWidth={0.65}
           />
                    
           <MessageCircleCode
-            className="hidden lg:block float-icons absolute left-16 xl:left-40 top-96 text-[#D6E6FF] pointer-events-none"
+            className="hidden lg:block float-icons absolute left-16 xl:left-40 top-96 text-brand-bg pointer-events-none"
             size={109}
-            strokeWidth={1.5}
+            strokeWidth={1.25}
           />
 
           <BotMessageSquare
-            className="hidden lg:block float-icons absolute left-0 xl:left-7 top-6 text-[#D6E6FF] pointer-events-none"
+            className="hidden lg:block float-icons absolute left-0 xl:left-7 top-6 text-brand-bg pointer-events-none"
             size={132}
-            strokeWidth={1.5}
+            strokeWidth={1}
           />
 
           <MessageCircleMore
-            className="hidden lg:block float-icons absolute left-28 xl:-left-10 -bottom-24 xl:-bottom-16 text-[#D6E6FF] pointer-events-none"
+            className="hidden lg:block float-icons absolute left-28 xl:-left-10 -bottom-24 xl:-bottom-16 text-brand-bg pointer-events-none"
             size={212}
-            strokeWidth={1.5}
+            strokeWidth={0.75}
           />
 
           <MessageCircleMore
-            className="hidden lg:block float-icons absolute -right-20 bottom-24 text-[#D6E6FF] pointer-events-none"
+            className="hidden lg:block float-icons absolute -right-20 bottom-24 text-brand-bg pointer-events-none"
             size={212}
-            strokeWidth={1.5}
+            strokeWidth={0.75}
           />
 
           <div className="max-w-[1200px] mx-auto">
             <div className="flex flex-col items-center gap-16">
               <div className="z-10 flex flex-col md:flex-row justify-between items-center w-full max-w-[900px] gap-12 md:gap-8 relative">
                 <div className="flex flex-col items-center gap-6 w-full md:w-[600px] max-w-[600px]">
-                  <h2 className="font-montserrat font-bold text-2xl leading-9 text-oc-gray-700 w-full text-center md:text-left">
+                  <h2 className="font-montserrat font-bold text-2xl leading-9 text-title w-full text-center md:text-left">
                     Presentamos Origin Clarity AI: Su asistente inteligente
                     corporativo.
                   </h2>
 
-                  <p className="font-montserrat font-normal text-base leading-7 text-oc-gray-700 w-full text-center md:text-left">
+                  <p className="font-montserrat font-normal text-base leading-7 text-paragraph w-full text-center md:text-left">
                     Una solución de IA de vanguardia diseñada para conectar su
                     ecosistema empresarial directamente con su documentación
                     oficial.
                   </p>
 
-                  <p className="font-montserrat font-semibold text-base leading-6 text-oc-blue-500 w-full text-center md:text-left">
+                  <p className="font-montserrat font-semibold text-base leading-6 text-highlight w-full text-center md:text-left">
                     Integración Nativa: Funciona en los canales que sus equipos
                     y clientes ya usan: WhatsApp, Telegram y Microsoft Teams.
                   </p>
@@ -215,12 +213,12 @@ export default function Index() {
         <section className="w-full bg-white py-[100px] px-10">
           <div className="max-w-[1200px] mx-auto">
             <div className="flex flex-col justify-center items-center gap-12">
-              <h2 className="font-montserrat font-bold text-2xl leading-9 text-center text-oc-gray-700 w-full max-w-[400px] lg:max-w-[1200px]">
+              <h2 className="font-montserrat font-bold text-2xl leading-9 text-center text-title w-full max-w-[400px] lg:max-w-[1200px]">
                 Impacto medible en 4 pilares estratégicos de su negocio:
               </h2>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-[1200px]">
-                <div className="flex flex-col items-center gap-4 p-6 rounded-xl border border-[#E2E8F0] bg-white shadow-sm md:min-h-[360px] lg:min-h-[406px]">
+                <div className="flex flex-col items-center gap-4 p-6 rounded-xl border border-oc-gray-200 bg-white shadow-sm md:min-h-[360px] lg:min-h-[406px]">
                   <div className="w-[100px] h-[100px] flex items-center justify-center">
                     <img
                       src="/assets/images/coin.png"
@@ -228,23 +226,23 @@ export default function Index() {
                       className="w-[100px] h-[100px]"
                     />
                   </div>
-                  <h3 className="font-montserrat font-semibold text-base leading-7 text-center text-oc-blue-500">
+                  <h3 className="font-montserrat font-semibold text-base leading-7 text-center text-highlight">
                     Transformación Económica y ROI Acelerado
                   </h3>
                   <div className="flex flex-col gap-3 w-full max-w-full lg:max-w-[243px]">
-                    <p className="font-montserrat font-normal text-center lg:text-left lg:text-base leading-6 text-oc-gray-700">
+                    <p className="font-montserrat font-normal text-center lg:text-left lg:text-base leading-6 text-paragraph">
                       • Reducción de costos drástica.
                     </p>
-                    <p className="font-montserrat font-normal text-center lg:text-left text-base leading-6 text-oc-gray-700">
+                    <p className="font-montserrat font-normal text-center lg:text-left text-base leading-6 text-paragraph">
                       • Productividad disparada.
                     </p>
-                    <p className="font-montserrat font-normal text-center lg:text-left text-base leading-6 text-oc-gray-700">
+                    <p className="font-montserrat font-normal text-center lg:text-left text-base leading-6 text-paragraph">
                       • Onboarding rápido y eficiente.
                     </p>
                   </div>
                 </div>
 
-                <div className="flex flex-col items-center gap-4 p-6 rounded-xl border border-[#E2E8F0] bg-white shadow-sm md:min-h-[360px] lg:min-h-[406px]">
+                <div className="flex flex-col items-center gap-4 p-6 rounded-xl border border-oc-gray-200 bg-white shadow-sm md:min-h-[360px] lg:min-h-[406px]">
                   <div className="w-[100px] h-[100px] flex items-center justify-center">
                     <img
                       src="/assets/images/medal.png"
@@ -252,23 +250,23 @@ export default function Index() {
                       className="w-[100px] h-[100px]"
                     />
                   </div>
-                  <h3 className="font-montserrat font-semibold text-base leading-7 text-center text-oc-blue-500">
+                  <h3 className="font-montserrat font-semibold text-base leading-7 text-center text-highlight">
                     Liderazgo de Marca y Prestigio
                   </h3>
                   <div className="flex flex-col gap-3 w-full max-w-full lg:max-w-[243px]">
-                    <p className="font-montserrat font-normal text-center lg:text-left text-base leading-6 text-oc-gray-700">
+                    <p className="font-montserrat font-normal text-center lg:text-left text-base leading-6 text-paragraph">
                       • Respuestas consistentes y alineadas a su identidad.
                     </p>
-                    <p className="font-montserrat font-normal text-center lg:text-left text-base leading-6 text-oc-gray-700">
+                    <p className="font-montserrat font-normal text-center lg:text-left text-base leading-6 text-paragraph">
                       • Experiencias memorables en canales clave.
                     </p>
-                    <p className="font-montserrat font-normal text-center lg:text-left text-base leading-6 text-oc-gray-700">
+                    <p className="font-montserrat font-normal text-center lg:text-left text-base leading-6 text-paragraph">
                       • Disponibilidad 24/7 con calidad premium.
                     </p>
                   </div>
                 </div>
 
-                <div className="flex flex-col items-center gap-4 p-6 rounded-xl border border-[#E2E8F0] bg-white shadow-sm md:min-h-[360px] lg:min-h-[406px]">
+                <div className="flex flex-col items-center gap-4 p-6 rounded-xl border border-oc-gray-200 bg-white shadow-sm md:min-h-[360px] lg:min-h-[406px]">
                   <div className="w-[100px] h-[100px] flex items-center justify-center">
                     <img
                       src="/assets/images/trophy.png"
@@ -276,23 +274,23 @@ export default function Index() {
                       className="w-[100px] h-[100px]"
                     />
                   </div>
-                  <h3 className="font-montserrat font-semibold text-base leading-7 text-center text-oc-blue-500">
+                  <h3 className="font-montserrat font-semibold text-base leading-7 text-center text-highlight">
                     Excelencia Operativa Optimizada
                   </h3>
                   <div className="flex flex-col gap-3 w-full max-w-full lg:max-w-[243px]">
-                    <p className="font-montserrat font-normal text-center lg:text-left text-base leading-6 text-oc-gray-700">
+                    <p className="font-montserrat font-normal text-center lg:text-left text-base leading-6 text-paragraph">
                       • Automatización de tareas repetitivas.
                     </p>
-                    <p className="font-montserrat font-normal text-center lg:text-left text-base leading-6 text-oc-gray-700">
+                    <p className="font-montserrat font-normal text-center lg:text-left text-base leading-6 text-paragraph">
                       • Respuestas verificadas y auditables.
                     </p>
-                    <p className="font-montserrat font-normal text-center lg:text-left text-base leading-6 text-oc-gray-700">
+                    <p className="font-montserrat font-normal text-center lg:text-left text-base leading-6 text-paragraph">
                       • Integración fluida con sistemas existentes.
                     </p>
                   </div>
                 </div>
 
-                <div className="flex flex-col items-center gap-4 p-6 rounded-xl border border-[#E2E8F0] bg-white shadow-sm md:min-h-[360px] lg:min-h-[406px]">
+                <div className="flex flex-col items-center gap-4 p-6 rounded-xl border border-oc-gray-200 bg-white shadow-sm md:min-h-[360px] lg:min-h-[406px]">
                   <div className="w-[100px] h-[100px] flex items-center justify-center">
                     <img
                       src="/assets/images/rocket.png"
@@ -300,17 +298,17 @@ export default function Index() {
                       className="w-[100px] h-[100px]"
                     />
                   </div>
-                  <h3 className="font-montserrat font-semibold text-base leading-7 text-center text-oc-blue-500">
+                  <h3 className="font-montserrat font-semibold text-base leading-7 text-center text-highlight">
                     Tecnología de Vanguardia ('State of the Art')
                   </h3>
                   <div className="flex flex-col gap-3 w-full max-w-full lg:max-w-[243px]">
-                    <p className="font-montserrat font-normal text-center lg:text-left text-base leading-6 text-oc-gray-700">
+                    <p className="font-montserrat font-normal text-center lg:text-left text-base leading-6 text-paragraph">
                       • Arquitectura escalable y segura.
                     </p>
-                    <p className="font-montserrat font-normal text-center lg:text-left text-base leading-6 text-oc-gray-700">
+                    <p className="font-montserrat font-normal text-center lg:text-left text-base leading-6 text-paragraph">
                       • Modelos de lenguaje de última generación.
                     </p>
-                    <p className="font-montserrat font-normal text-center lg:text-left text-base leading-6 text-oc-gray-700">
+                    <p className="font-montserrat font-normal text-center lg:text-left text-base leading-6 text-paragraph">
                       • Actualizaciones continuas con zero-downtime.
                     </p>
                   </div>
@@ -320,7 +318,7 @@ export default function Index() {
           </div>
         </section>
 
-        <section className="relative w-full bg-oc-blue-50 py-[100px] px-10 relative overflow-hidden">
+        <section className="relative w-full bg-surface-light py-[100px] px-10 overflow-hidden">
           <div className="max-w-[900px] mx-auto">
             <div className="flex flex-col gap-12">
               <div className="flex flex-col md:flex-row justify-center items-center gap-12 md:gap-12 z-10">
@@ -330,15 +328,15 @@ export default function Index() {
                   className="float-icons w-[125px] lg:w-[150px] h-auto object-contain flex-shrink-0"
                 />
                 <div className="flex flex-col gap-7 flex-1 max-w-[600px]">
-                  <h2 className="font-montserrat font-bold text-2xl leading-9 text-oc-gray-700 w-full max-w-[400px] md:max-w-full mx-auto text-center md:text-left">
+                  <h2 className="font-montserrat font-bold text-2xl leading-9 text-title w-full max-w-[400px] md:max-w-full mx-auto text-center md:text-left">
                     Una inversión en inteligencia, No en riesgo.
                   </h2>
-                  <p className="font-montserrat font-normal text-base leading-6 text-oc-gray-700 text-center md:text-left">
-                    <span className="font-bold text-oc-blue-400">
+                  <p className="font-montserrat font-normal text-base leading-6 text-paragraph text-center md:text-left">
+                    <span className="font-bold text-highlight">
                       Origin Clarity AI
                     </span>{" "}
                     utiliza la{" "}
-                    <span className="font-bold text-oc-blue-400">
+                    <span className="font-bold text-highlight">
                       Arquitectura RAG
                     </span>
                     , el estándar de oro para la IA empresarial, asegurando que
@@ -349,47 +347,47 @@ export default function Index() {
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full z-10">
-                <div className="flex flex-col items-center gap-4 p-6 rounded-xl border border-[#E2E8F0] bg-white shadow-sm">
+                <div className="flex flex-col items-center gap-4 p-6 rounded-xl border border-oc-gray-200 bg-white shadow-sm">
                   <img
                     src="/assets/images/quote-person-01.png"
                     alt="Client testimonial"
-                    className="w-[120px] h-[120px] rounded-full border-[1.5px] border-oc-blue-400 object-cover"
+                    className="w-[120px] h-[120px] rounded-full border-[2px] border-brand-light object-cover"
                   />
-                  <blockquote className="font-montserrat font-medium text-base leading-6 text-center text-oc-blue-400">
+                  <blockquote className="font-montserrat font-medium text-base leading-6 text-center text-highlight">
                     "Excelente precisión y reducción de tiempos de respuesta.
                     Una herramienta clave para nuestro crecimiento."
                   </blockquote>
-                  <p className="font-normal text-sm leading-5 text-center text-oc-gray-500">
+                  <p className="font-normal text-sm leading-5 text-center text-body">
                     Testimonio de Cliente
                   </p>
                 </div>
 
-                <div className="flex flex-col items-center gap-4 p-6 rounded-xl border border-[#E2E8F0] bg-white shadow-sm">
+                <div className="flex flex-col items-center gap-4 p-6 rounded-xl border border-oc-gray-200 bg-white shadow-sm">
                   <img
                     src="/assets/images/quote-person-02.png"
                     alt="Client testimonial"
-                    className="w-[120px] h-[120px] rounded-full border-[1.5px] border-oc-blue-400 object-cover"
+                    className="w-[120px] h-[120px] rounded-full border-[2px] border-brand-light object-cover"
                   />
-                  <blockquote className="font-montserrat font-medium text-base leading-6 text-center text-oc-blue-400">
+                  <blockquote className="font-montserrat font-medium text-base leading-6 text-center text-highlight">
                     "Implementación rápida y segura. El impacto en atención al
                     cliente fue inmediato."
                   </blockquote>
-                  <p className="font-normal text-sm leading-5 text-center text-oc-gray-500">
+                  <p className="font-normal text-sm leading-5 text-center text-body">
                     Testimonio de Cliente
                   </p>
                 </div>
 
-                <div className="flex flex-col items-center gap-4 p-6 rounded-xl border border-[#E2E8F0] bg-white shadow-sm">
+                <div className="flex flex-col items-center gap-4 p-6 rounded-xl border border-oc-gray-200 bg-white shadow-sm">
                   <img
                     src="/assets/images/quote-person-03.png"
                     alt="Client testimonial"
-                    className="w-[120px] h-[120px] rounded-full border-[1.5px] border-oc-blue-400 object-cover"
+                    className="w-[120px] h-[120px] rounded-full border-[2px] border-brand-light object-cover"
                   />
-                  <blockquote className="font-montserrat font-medium text-base leading-6 text-center text-oc-blue-400">
+                  <blockquote className="font-montserrat font-medium text-base leading-6 text-center text-highlight">
                     "Integración perfecta con nuestros canales. Altamente
                     recomendado para empresas serias."
                   </blockquote>
-                  <p className="font-normal text-sm leading-5 text-center text-oc-gray-500">
+                  <p className="font-normal text-sm leading-5 text-center text-body">
                     Testimonio de Cliente
                   </p>
                 </div>
@@ -398,34 +396,34 @@ export default function Index() {
           </div>
 
           <MessageCircleCode
-            className="hidden lg:block float-icons absolute left-10 xl:left-40 top-64 xl:top-72 text-[#D6E6FF] pointer-events-none"
+            className="hidden lg:block float-icons absolute left-10 xl:left-40 top-64 xl:top-72 text-brand-bg pointer-events-none"
             size={91}
-            strokeWidth={1.5}
+            strokeWidth={1.25}
           />
           <BotMessageSquare
-            className="hidden lg:block float-icons absolute -right-14 xl:right-20 top-12 text-[#D6E6FF] pointer-events-none"
+            className="hidden lg:block float-icons absolute -right-14 xl:right-20 top-12 text-brand-bg pointer-events-none"
             size={168}
-            strokeWidth={1.5}
+            strokeWidth={0.75}
           />
           <MessageCircleMore
-            className="hidden lg:block float-icons absolute -left-8 -bottom-12 text-[#D6E6FF] pointer-events-none"
+            className="hidden lg:block float-icons absolute -left-8 -bottom-12 text-brand-bg pointer-events-none"
             size={168}
-            strokeWidth={1.5}
-          />
-          <MessageCircleMore
-            className="hidden lg:block float-icons absolute -right-16 bottom-56 text-[#D6E6FF] pointer-events-none"
-            size={168}
-            strokeWidth={1.5}
-          />
-          <Bot
-            className="hidden lg:block float-icons absolute -left-20 xl:left-10 top-8 text-[#D6E6FF] pointer-events-none"
-            size={173}
             strokeWidth={1}
           />
+          <MessageCircleMore
+            className="hidden lg:block float-icons absolute -right-16 bottom-56 text-brand-bg pointer-events-none"
+            size={168}
+            strokeWidth={0.85}
+          />
+          <Bot
+            className="hidden lg:block float-icons absolute -left-20 xl:left-10 top-8 text-brand-bg pointer-events-none"
+            size={173}
+            strokeWidth={0.75}
+          />
           <MessageCircleCode
-            className="hidden lg:block float-icons absolute right-40 bottom-10 xl:bottom-20 text-[#D6E6FF] pointer-events-none"
+            className="hidden lg:block float-icons absolute right-40 bottom-10 xl:bottom-20 text-brand-bg pointer-events-none"
             size={78}
-            strokeWidth={1.5}
+            strokeWidth={1.25}
           />
         </section>
 
@@ -435,11 +433,11 @@ export default function Index() {
               <div className="flex flex-col lg:flex-row items-center gap-12">
                 <div className="flex flex-row flex-nowrap gap-12 w-full max-w-[600px]">
                   <div className="flex flex-col gap-7 flex-1 max-w-[600px]">
-                    <h2 className="font-montserrat font-bold text-2xl leading-9 text-oc-gray-700">
+                    <h2 className="font-montserrat font-bold text-2xl leading-9 text-title text-center md:text-left">
                       ¿Listo para el futuro? Hablemos sobre su implementación
                     </h2>
-                    <p className="font-montserrat font-normal text-base leading-6 text-oc-gray-700">
-                      <span className="font-bold text-oc-blue-400">
+                    <p className="font-montserrat font-normal text-base leading-6 text-paragraph text-center md:text-left">
+                      <span className="font-bold text-highlight">
                         Origin Clarity AI
                       </span>{" "}
                       es su socio estratégico para desbloquear un nuevo nivel de
@@ -456,71 +454,71 @@ export default function Index() {
               </div>
 
               <div className="flex flex-col lg:flex-row items-end gap-12">
-                <div className="flex-1 max-w-[600px] w-full p-6 rounded-xl border border-[#E2E8F0] bg-white shadow-sm mx-auto">
+                <div className="flex-1 max-w-[600px] w-full p-6 rounded-xl border border-oc-gray-200 bg-white shadow-sm mx-auto">
                   <form className="flex flex-col gap-6">
                     <div className="flex flex-col gap-1">
-                      <label className="font-montserrat font-semibold text-xs leading-5 text-oc-blue-500">
+                      <label className="font-montserrat font-semibold text-xs leading-5 text-highlight">
                         Nombre
                       </label>
                       <input
                         type="text"
                         placeholder="Ingresar..."
-                        className="px-3 py-2 rounded-lg border border-oc-gray-200 bg-oc-gray-50 text-sm font-normal text-oc-gray-400 placeholder:text-oc-gray-400 focus:outline-none focus:ring-2 focus:ring-oc-blue-400"
+                        className="px-3 py-2 rounded-lg border border-oc-gray-200 bg-oc-gray-50 text-sm font-normal text-oc-gray-400 placeholder:text-oc-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-light"
                       />
                     </div>
 
                     <div className="flex flex-col gap-1">
-                      <label className="font-montserrat font-semibold text-xs leading-5 text-oc-blue-500">
+                      <label className="font-montserrat font-semibold text-xs leading-5 text-highlight">
                         Empresa de donde nos contactas
                       </label>
                       <input
                         type="text"
                         placeholder="Ingresar..."
-                        className="px-3 py-2 rounded-lg border border-oc-gray-200 bg-oc-gray-50 text-sm font-normal text-oc-gray-400 placeholder:text-oc-gray-400 focus:outline-none focus:ring-2 focus:ring-oc-blue-400"
+                        className="px-3 py-2 rounded-lg border border-oc-gray-200 bg-oc-gray-50 text-sm font-normal text-oc-gray-400 placeholder:text-oc-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-light"
                       />
                     </div>
 
                     <div className="flex flex-col gap-1">
-                      <label className="font-montserrat font-semibold text-xs leading-5 text-oc-blue-500">
+                      <label className="font-montserrat font-semibold text-xs leading-5 text-highlight">
                         Cargo en la empresa
                       </label>
                       <input
                         type="text"
                         placeholder="Ingresar..."
-                        className="px-3 py-2 rounded-lg border border-oc-gray-200 bg-oc-gray-50 text-sm font-normal text-oc-gray-400 placeholder:text-oc-gray-400 focus:outline-none focus:ring-2 focus:ring-oc-blue-400"
+                        className="px-3 py-2 rounded-lg border border-oc-gray-200 bg-oc-gray-50 text-sm font-normal text-oc-gray-400 placeholder:text-oc-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-light"
                       />
                     </div>
 
                     <div className="flex flex-col gap-1">
-                      <label className="font-montserrat font-semibold text-xs leading-5 text-oc-blue-500">
+                      <label className="font-montserrat font-semibold text-xs leading-5 text-highlight">
                         Teléfono
                       </label>
                       <input
                         type="tel"
                         placeholder="011 0000 0000"
-                        className="px-3 py-2 rounded-lg border border-oc-gray-200 bg-oc-gray-50 text-sm font-normal text-oc-gray-400 placeholder:text-oc-gray-400 focus:outline-none focus:ring-2 focus:ring-oc-blue-400"
+                        className="px-3 py-2 rounded-lg border border-oc-gray-200 bg-oc-gray-50 text-sm font-normal text-oc-gray-400 placeholder:text-oc-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-light"
                       />
                     </div>
 
                     <div className="flex flex-col gap-1">
-                      <label className="font-montserrat font-semibold text-xs leading-5 text-oc-blue-500">
+                      <label className="font-montserrat font-semibold text-xs leading-5 text-highlight">
                         Email
                       </label>
                       <input
                         type="email"
                         placeholder="ejemplo@email.com"
-                        className="px-3 py-2 rounded-lg border border-oc-gray-200 bg-oc-gray-50 text-sm font-normal text-oc-gray-400 placeholder:text-oc-gray-400 focus:outline-none focus:ring-2 focus:ring-oc-blue-400"
+                        className="px-3 py-2 rounded-lg border border-oc-gray-200 bg-oc-gray-50 text-sm font-normal text-oc-gray-400 placeholder:text-oc-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-light"
                       />
                     </div>
 
-                    <button
+                    <Button
                       type="submit"
-                      className="w-full sm:w-fit mx-auto px-4 py-2 rounded-md bg-oc-blue-400 shadow-[0_1px_3px_0_rgba(0,0,0,0.20)] hover:bg-oc-blue-500 transition-colors"
+                      variant="brand"
+                      size="regular"
+                      className="w-full sm:w-fit mx-auto"
                     >
-                      <span className="font-montserrat font-semibold text-sm leading-5 text-white">
-                        Solicitar Demo
-                      </span>
-                    </button>
+                      Solicitar Demo
+                    </Button>
                   </form>
                 </div>
 

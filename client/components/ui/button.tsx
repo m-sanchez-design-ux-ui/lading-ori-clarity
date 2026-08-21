@@ -18,12 +18,18 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        // Origin Clarity AI brand button (synced from Figma: Buttons component, node 8396:3314)
+        brand:
+          "cursor-pointer rounded-lg font-montserrat font-semibold leading-none drop-shadow-[0px_1px_1.5px_rgba(0,0,0,0.2)] bg-surface-button-default text-button-text hover:bg-surface-button-hover active:bg-surface-button-pressed active:text-button-text-pressed",
       },
       size: {
         default: "h-10 px-4 py-2",
         sm: "h-9 rounded-md px-3",
         lg: "h-11 rounded-md px-8",
         icon: "h-10 w-10",
+        // Origin Clarity AI brand sizes (synced from Figma)
+        regular: "min-h-9 px-4 py-2 text-sm", // brand-spacing/md+xs, brand-typography/size/body-sm
+        large: "min-h-[52px] px-6 py-3 text-base", // brand-spacing/lg+sm, brand-typography/size/body-md
       },
     },
     defaultVariants: {
