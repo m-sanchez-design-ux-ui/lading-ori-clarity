@@ -20,7 +20,7 @@ const buttonVariants = cva(
         link: "text-primary underline-offset-4 hover:underline",
         // Origin Clarity AI brand button (synced from Figma: Buttons component, node 8396:3314)
         brand:
-          "cursor-pointer rounded-lg font-montserrat font-semibold leading-none drop-shadow-[0px_1px_1.5px_rgba(0,0,0,0.2)] bg-brand-light text-brand-dark hover:bg-surface-button-hover active:bg-surface-button-pressed active:text-brand-darkest",
+          "cursor-pointer rounded-lg font-montserrat font-semibold leading-none drop-shadow-[0px_1px_1.5px_rgba(0,0,0,0.2)] bg-surface-button-default text-button-text hover:bg-surface-button-hover active:bg-surface-button-pressed active:text-button-text-pressed",
       },
       size: {
         default: "h-10 px-4 py-2",

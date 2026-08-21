@@ -14,7 +14,7 @@ export default function Index() {
 
       <div className="relative flex flex-col items-center w-full bg-white font-montserrat">
         <Header />
-        <section className="relative w-full bg-[linear-gradient(100deg,#BFD3FA_-7.02%,#F4F7FD_34.96%,#F4F7FD_72.12%,#BFD3FA_104.75%)] px-10 py-[100px] relative overflow-hidden flex flex-col items-center">
+        <section className="relative w-full bg-[linear-gradient(100deg,#BFD3FA_-7.02%,#F4F7FD_34.96%,#F4F7FD_72.12%,#BFD3FA_104.75%)] px-10 py-[100px] overflow-hidden flex flex-col items-center">
           <MessageCircleMore
             className="hidden lg:block float-icons absolute left-6 -top-12 text-brand-bg pointer-events-none"
             size={113}
@@ -23,12 +23,12 @@ export default function Index() {
           <div className="max-w-[1440px] mx-auto w-full mt-0 pt-0">
             <div className="flex flex-col lg:flex-row justify-between items-center gap-12 lg:gap-8">
               <div className="z-10 flex flex-col items-start gap-6 w-full lg:w-[600px] max-w-[600px]">
-                <h1 className="font-montserrat font-extrabold text-[32px] sm:text-[40px] leading-[1.275] tracking-[0.8px] text-oc-gray-700">
+                <h1 className="font-montserrat font-extrabold text-[32px] sm:text-[40px] leading-[1.275] tracking-[0.8px] text-title">
                   Origin Clarity AI: El Experto Corporativo 24/7 que Conecta su
                   Negocio.
                 </h1>
 
-                <p className="font-montserrat font-normal text-base leading-7 text-oc-gray-800">
+                <p className="font-montserrat font-normal text-base leading-7 text-paragraph">
                   Transforme su conocimiento fragmentado en un Asistente
                   Inteligente. Productividad inmediata, costos reducidos y
                   experiencia del cliente superior en WhatsApp, Teams y
@@ -51,7 +51,7 @@ export default function Index() {
                       />
                     </div>
 
-                    <p className="font-montserrat font-normal text-base leading-6 text-center text-oc-gray-800">
+                    <p className="font-montserrat font-normal text-base leading-6 text-center text-paragraph">
                       Inteligencia aplicada
                       <br />
                       a su ecosistema corporativo.
@@ -63,14 +63,14 @@ export default function Index() {
                     <div className="flex justify-center items-start gap-4 w-full">
                       <div className="flex-1 flex flex-col items-center gap-2 p-4 rounded-lg border border-oc-gray-200">
                         <img src="/assets/images/Icon-ws.svg" alt="WhatsApp" className="w-12 h-12" />
-                        <span className="font-montserrat font-semibold text-xs min-[425px]:text-sm text-oc-gray-800">
+                        <span className="font-montserrat font-semibold text-xs min-[425px]:text-sm text-paragraph">
                           WhatsApp
                         </span>
                       </div>
 
                       <div className="flex-1 flex flex-col items-center gap-2 p-4 rounded-lg border border-oc-gray-200">
                         <img src="/assets/images/Icon-teams.svg" alt="WhatsApp" className="w-12 h-12" />
-                        <span className="font-montserrat font-semibold text-xs min-[425px]:text-sm text-oc-gray-800">
+                        <span className="font-montserrat font-semibold text-xs min-[425px]:text-sm text-paragraph">
                           Teams
                         </span>
                       </div>
@@ -118,11 +118,11 @@ export default function Index() {
               />
 
               <div className="flex flex-col items-start gap-6 w-full md:w-[600px] max-w-[600px]">
-                <h2 className="font-montserrat font-bold text-2xl leading-9 text-oc-gray-700 text-center md:text-left w-full max-w-[400px] md:max-w-full mx-auto">
+                <h2 className="font-montserrat font-bold text-2xl leading-9 text-title text-center md:text-left w-full max-w-[400px] md:max-w-full mx-auto">
                   ¿Su conocimiento está siendo su mayor cuello de botella?
                 </h2>
 
-                <p className="font-montserrat font-normal text-base leading-7 text-oc-gray-800 text-center md:text-left">
+                <p className="font-montserrat font-normal text-base leading-7 text-paragraph text-center md:text-left">
                   En el mercado actual, la información es su activo más
                   valioso, pero a menudo se encuentra inaccesible, dispersa y
                   desaprovechada. Sus equipos invierten hasta un 20% de su
@@ -133,7 +133,7 @@ export default function Index() {
           </div>
         </section>
 
-        <section className="relative w-full bg-surface-light py-[100px] px-10 relative overflow-hidden">
+        <section className="relative w-full bg-surface-light py-[100px] px-10 overflow-hidden">
 
           <Bot
             className="hidden lg:block float-icons absolute -right-20 xl:right-20 top-64 xl:top-44 text-brand-bg pointer-events-none"
@@ -169,18 +169,18 @@ export default function Index() {
             <div className="flex flex-col items-center gap-16">
               <div className="z-10 flex flex-col md:flex-row justify-between items-center w-full max-w-[900px] gap-12 md:gap-8 relative">
                 <div className="flex flex-col items-center gap-6 w-full md:w-[600px] max-w-[600px]">
-                  <h2 className="font-montserrat font-bold text-2xl leading-9 text-oc-gray-700 w-full text-center md:text-left">
+                  <h2 className="font-montserrat font-bold text-2xl leading-9 text-title w-full text-center md:text-left">
                     Presentamos Origin Clarity AI: Su asistente inteligente
                     corporativo.
                   </h2>
 
-                  <p className="font-montserrat font-normal text-base leading-7 text-oc-gray-800 w-full text-center md:text-left">
+                  <p className="font-montserrat font-normal text-base leading-7 text-paragraph w-full text-center md:text-left">
                     Una solución de IA de vanguardia diseñada para conectar su
                     ecosistema empresarial directamente con su documentación
                     oficial.
                   </p>
 
-                  <p className="font-montserrat font-semibold text-base leading-6 text-brand-primary w-full text-center md:text-left">
+                  <p className="font-montserrat font-semibold text-base leading-6 text-highlight w-full text-center md:text-left">
                     Integración Nativa: Funciona en los canales que sus equipos
                     y clientes ya usan: WhatsApp, Telegram y Microsoft Teams.
                   </p>
@@ -213,7 +213,7 @@ export default function Index() {
         <section className="w-full bg-white py-[100px] px-10">
           <div className="max-w-[1200px] mx-auto">
             <div className="flex flex-col justify-center items-center gap-12">
-              <h2 className="font-montserrat font-bold text-2xl leading-9 text-center text-oc-gray-700 w-full max-w-[400px] lg:max-w-[1200px]">
+              <h2 className="font-montserrat font-bold text-2xl leading-9 text-center text-title w-full max-w-[400px] lg:max-w-[1200px]">
                 Impacto medible en 4 pilares estratégicos de su negocio:
               </h2>
 
@@ -226,17 +226,17 @@ export default function Index() {
                       className="w-[100px] h-[100px]"
                     />
                   </div>
-                  <h3 className="font-montserrat font-semibold text-base leading-7 text-center text-brand-primary">
+                  <h3 className="font-montserrat font-semibold text-base leading-7 text-center text-highlight">
                     Transformación Económica y ROI Acelerado
                   </h3>
                   <div className="flex flex-col gap-3 w-full max-w-full lg:max-w-[243px]">
-                    <p className="font-montserrat font-normal text-center lg:text-left lg:text-base leading-6 text-oc-gray-800">
+                    <p className="font-montserrat font-normal text-center lg:text-left lg:text-base leading-6 text-paragraph">
                       • Reducción de costos drástica.
                     </p>
-                    <p className="font-montserrat font-normal text-center lg:text-left text-base leading-6 text-oc-gray-800">
+                    <p className="font-montserrat font-normal text-center lg:text-left text-base leading-6 text-paragraph">
                       • Productividad disparada.
                     </p>
-                    <p className="font-montserrat font-normal text-center lg:text-left text-base leading-6 text-oc-gray-800">
+                    <p className="font-montserrat font-normal text-center lg:text-left text-base leading-6 text-paragraph">
                       • Onboarding rápido y eficiente.
                     </p>
                   </div>
@@ -250,17 +250,17 @@ export default function Index() {
                       className="w-[100px] h-[100px]"
                     />
                   </div>
-                  <h3 className="font-montserrat font-semibold text-base leading-7 text-center text-brand-primary">
+                  <h3 className="font-montserrat font-semibold text-base leading-7 text-center text-highlight">
                     Liderazgo de Marca y Prestigio
                   </h3>
                   <div className="flex flex-col gap-3 w-full max-w-full lg:max-w-[243px]">
-                    <p className="font-montserrat font-normal text-center lg:text-left text-base leading-6 text-oc-gray-800">
+                    <p className="font-montserrat font-normal text-center lg:text-left text-base leading-6 text-paragraph">
                       • Respuestas consistentes y alineadas a su identidad.
                     </p>
-                    <p className="font-montserrat font-normal text-center lg:text-left text-base leading-6 text-oc-gray-800">
+                    <p className="font-montserrat font-normal text-center lg:text-left text-base leading-6 text-paragraph">
                       • Experiencias memorables en canales clave.
                     </p>
-                    <p className="font-montserrat font-normal text-center lg:text-left text-base leading-6 text-oc-gray-800">
+                    <p className="font-montserrat font-normal text-center lg:text-left text-base leading-6 text-paragraph">
                       • Disponibilidad 24/7 con calidad premium.
                     </p>
                   </div>
@@ -274,17 +274,17 @@ export default function Index() {
                       className="w-[100px] h-[100px]"
                     />
                   </div>
-                  <h3 className="font-montserrat font-semibold text-base leading-7 text-center text-brand-primary">
+                  <h3 className="font-montserrat font-semibold text-base leading-7 text-center text-highlight">
                     Excelencia Operativa Optimizada
                   </h3>
                   <div className="flex flex-col gap-3 w-full max-w-full lg:max-w-[243px]">
-                    <p className="font-montserrat font-normal text-center lg:text-left text-base leading-6 text-oc-gray-800">
+                    <p className="font-montserrat font-normal text-center lg:text-left text-base leading-6 text-paragraph">
                       • Automatización de tareas repetitivas.
                     </p>
-                    <p className="font-montserrat font-normal text-center lg:text-left text-base leading-6 text-oc-gray-800">
+                    <p className="font-montserrat font-normal text-center lg:text-left text-base leading-6 text-paragraph">
                       • Respuestas verificadas y auditables.
                     </p>
-                    <p className="font-montserrat font-normal text-center lg:text-left text-base leading-6 text-oc-gray-800">
+                    <p className="font-montserrat font-normal text-center lg:text-left text-base leading-6 text-paragraph">
                       • Integración fluida con sistemas existentes.
                     </p>
                   </div>
@@ -298,17 +298,17 @@ export default function Index() {
                       className="w-[100px] h-[100px]"
                     />
                   </div>
-                  <h3 className="font-montserrat font-semibold text-base leading-7 text-center text-brand-primary">
+                  <h3 className="font-montserrat font-semibold text-base leading-7 text-center text-highlight">
                     Tecnología de Vanguardia ('State of the Art')
                   </h3>
                   <div className="flex flex-col gap-3 w-full max-w-full lg:max-w-[243px]">
-                    <p className="font-montserrat font-normal text-center lg:text-left text-base leading-6 text-oc-gray-800">
+                    <p className="font-montserrat font-normal text-center lg:text-left text-base leading-6 text-paragraph">
                       • Arquitectura escalable y segura.
                     </p>
-                    <p className="font-montserrat font-normal text-center lg:text-left text-base leading-6 text-oc-gray-800">
+                    <p className="font-montserrat font-normal text-center lg:text-left text-base leading-6 text-paragraph">
                       • Modelos de lenguaje de última generación.
                     </p>
-                    <p className="font-montserrat font-normal text-center lg:text-left text-base leading-6 text-oc-gray-800">
+                    <p className="font-montserrat font-normal text-center lg:text-left text-base leading-6 text-paragraph">
                       • Actualizaciones continuas con zero-downtime.
                     </p>
                   </div>
@@ -318,7 +318,7 @@ export default function Index() {
           </div>
         </section>
 
-        <section className="relative w-full bg-surface-light py-[100px] px-10 relative overflow-hidden">
+        <section className="relative w-full bg-surface-light py-[100px] px-10 overflow-hidden">
           <div className="max-w-[900px] mx-auto">
             <div className="flex flex-col gap-12">
               <div className="flex flex-col md:flex-row justify-center items-center gap-12 md:gap-12 z-10">
@@ -328,15 +328,15 @@ export default function Index() {
                   className="float-icons w-[125px] lg:w-[150px] h-auto object-contain flex-shrink-0"
                 />
                 <div className="flex flex-col gap-7 flex-1 max-w-[600px]">
-                  <h2 className="font-montserrat font-bold text-2xl leading-9 text-oc-gray-700 w-full max-w-[400px] md:max-w-full mx-auto text-center md:text-left">
+                  <h2 className="font-montserrat font-bold text-2xl leading-9 text-title w-full max-w-[400px] md:max-w-full mx-auto text-center md:text-left">
                     Una inversión en inteligencia, No en riesgo.
                   </h2>
-                  <p className="font-montserrat font-normal text-base leading-6 text-oc-gray-800 text-center md:text-left">
-                    <span className="font-bold text-brand-primary">
+                  <p className="font-montserrat font-normal text-base leading-6 text-paragraph text-center md:text-left">
+                    <span className="font-bold text-highlight">
                       Origin Clarity AI
                     </span>{" "}
                     utiliza la{" "}
-                    <span className="font-bold text-brand-primary">
+                    <span className="font-bold text-highlight">
                       Arquitectura RAG
                     </span>
                     , el estándar de oro para la IA empresarial, asegurando que
@@ -353,11 +353,11 @@ export default function Index() {
                     alt="Client testimonial"
                     className="w-[120px] h-[120px] rounded-full border-[2px] border-brand-light object-cover"
                   />
-                  <blockquote className="font-montserrat font-medium text-base leading-6 text-center text-brand-primary">
+                  <blockquote className="font-montserrat font-medium text-base leading-6 text-center text-highlight">
                     "Excelente precisión y reducción de tiempos de respuesta.
                     Una herramienta clave para nuestro crecimiento."
                   </blockquote>
-                  <p className="font-normal text-sm leading-5 text-center text-oc-gray-500">
+                  <p className="font-normal text-sm leading-5 text-center text-body">
                     Testimonio de Cliente
                   </p>
                 </div>
@@ -368,11 +368,11 @@ export default function Index() {
                     alt="Client testimonial"
                     className="w-[120px] h-[120px] rounded-full border-[2px] border-brand-light object-cover"
                   />
-                  <blockquote className="font-montserrat font-medium text-base leading-6 text-center text-brand-primary">
+                  <blockquote className="font-montserrat font-medium text-base leading-6 text-center text-highlight">
                     "Implementación rápida y segura. El impacto en atención al
                     cliente fue inmediato."
                   </blockquote>
-                  <p className="font-normal text-sm leading-5 text-center text-oc-gray-500">
+                  <p className="font-normal text-sm leading-5 text-center text-body">
                     Testimonio de Cliente
                   </p>
                 </div>
@@ -383,11 +383,11 @@ export default function Index() {
                     alt="Client testimonial"
                     className="w-[120px] h-[120px] rounded-full border-[2px] border-brand-light object-cover"
                   />
-                  <blockquote className="font-montserrat font-medium text-base leading-6 text-center text-brand-primary">
+                  <blockquote className="font-montserrat font-medium text-base leading-6 text-center text-highlight">
                     "Integración perfecta con nuestros canales. Altamente
                     recomendado para empresas serias."
                   </blockquote>
-                  <p className="font-normal text-sm leading-5 text-center text-oc-gray-500">
+                  <p className="font-normal text-sm leading-5 text-center text-body">
                     Testimonio de Cliente
                   </p>
                 </div>
@@ -433,11 +433,11 @@ export default function Index() {
               <div className="flex flex-col lg:flex-row items-center gap-12">
                 <div className="flex flex-row flex-nowrap gap-12 w-full max-w-[600px]">
                   <div className="flex flex-col gap-7 flex-1 max-w-[600px]">
-                    <h2 className="font-montserrat font-bold text-2xl leading-9 text-oc-gray-700 text-center md:text-left">
+                    <h2 className="font-montserrat font-bold text-2xl leading-9 text-title text-center md:text-left">
                       ¿Listo para el futuro? Hablemos sobre su implementación
                     </h2>
-                    <p className="font-montserrat font-normal text-base leading-6 text-oc-gray-800 text-center md:text-left">
-                      <span className="font-bold text-brand-primary">
+                    <p className="font-montserrat font-normal text-base leading-6 text-paragraph text-center md:text-left">
+                      <span className="font-bold text-highlight">
                         Origin Clarity AI
                       </span>{" "}
                       es su socio estratégico para desbloquear un nuevo nivel de
@@ -457,7 +457,7 @@ export default function Index() {
                 <div className="flex-1 max-w-[600px] w-full p-6 rounded-xl border border-oc-gray-200 bg-white shadow-sm mx-auto">
                   <form className="flex flex-col gap-6">
                     <div className="flex flex-col gap-1">
-                      <label className="font-montserrat font-semibold text-xs leading-5 text-brand-primary">
+                      <label className="font-montserrat font-semibold text-xs leading-5 text-highlight">
                         Nombre
                       </label>
                       <input
@@ -468,7 +468,7 @@ export default function Index() {
                     </div>
 
                     <div className="flex flex-col gap-1">
-                      <label className="font-montserrat font-semibold text-xs leading-5 text-brand-primary">
+                      <label className="font-montserrat font-semibold text-xs leading-5 text-highlight">
                         Empresa de donde nos contactas
                       </label>
                       <input
@@ -479,7 +479,7 @@ export default function Index() {
                     </div>
 
                     <div className="flex flex-col gap-1">
-                      <label className="font-montserrat font-semibold text-xs leading-5 text-brand-primary">
+                      <label className="font-montserrat font-semibold text-xs leading-5 text-highlight">
                         Cargo en la empresa
                       </label>
                       <input
@@ -490,7 +490,7 @@ export default function Index() {
                     </div>
 
                     <div className="flex flex-col gap-1">
-                      <label className="font-montserrat font-semibold text-xs leading-5 text-brand-primary">
+                      <label className="font-montserrat font-semibold text-xs leading-5 text-highlight">
                         Teléfono
                       </label>
                       <input
@@ -501,7 +501,7 @@ export default function Index() {
                     </div>
 
                     <div className="flex flex-col gap-1">
-                      <label className="font-montserrat font-semibold text-xs leading-5 text-brand-primary">
+                      <label className="font-montserrat font-semibold text-xs leading-5 text-highlight">
                         Email
                       </label>
                       <input
