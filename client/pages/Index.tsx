@@ -51,6 +51,7 @@ export default function Index() {
                       />
                     </div>
 
+                    <p className="font-montserrat font-normal text-base leading-6 text-center text-oc-gray-800">
                       Inteligencia aplicada
                       <br />
                       a su ecosistema corporativo.
