@@ -14,7 +14,7 @@ export default function Index() {
 
       <div className="relative flex flex-col items-center w-full bg-white font-montserrat">
         <Header />
-        <section className="relative w-full bg-gradient-to-r from-surface-light via-slate-50 to-surface-light px-10 py-[100px] relative overflow-hidden flex flex-col items-center">
+        <section className="relative w-full bg-[linear-gradient(100deg,#BFD3FA_-7.02%,#F4F7FD_34.96%,#F4F7FD_72.12%,#BFD3FA_104.75%)] px-10 py-[100px] relative overflow-hidden flex flex-col items-center">
           <MessageCircleMore
             className="hidden lg:block float-icons absolute left-6 -top-12 text-brand-bg pointer-events-none"
             size={113}
