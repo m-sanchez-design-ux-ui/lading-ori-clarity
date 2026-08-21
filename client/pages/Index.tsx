@@ -41,7 +41,7 @@ export default function Index() {
               </div>
 
               <div className="relative w-full max-w-[600px] lg:max-w-[448px] lg:flex-shrink-0">
-                <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-[0_0_0_1px_#E2E8F0,0_20px_25px_-5px_rgba(0,0,0,0.10),0_8px_10px_-6px_rgba(0,0,0,0.10)] relative z-10">
+                <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-[0_20px_25px_-5px_rgba(0,0,0,0.10),0_8px_10px_-6px_rgba(0,0,0,0.10)] relative z-10 border border-oc-gray-200">
                   <div className="flex flex-col items-center gap-4">
                     <div className="flex flex-col items-center justify-center">
                       <img
@@ -61,14 +61,14 @@ export default function Index() {
                     </p>
 
                     <div className="flex justify-center items-start gap-4 w-full">
-                      <div className="flex-1 flex flex-col items-center gap-2 p-4 rounded-lg border border-oc-gray-300">
+                      <div className="flex-1 flex flex-col items-center gap-2 p-4 rounded-lg border border-oc-gray-200">
                         <img src="/assets/images/Icon-ws.svg" alt="WhatsApp" className="w-12 h-12" />
                         <span className="font-montserrat font-semibold text-xs min-[425px]:text-sm text-oc-gray-700">
                           WhatsApp
                         </span>
                       </div>
 
-                      <div className="flex-1 flex flex-col items-center gap-2 p-4 rounded-lg border border-oc-gray-300">
+                      <div className="flex-1 flex flex-col items-center gap-2 p-4 rounded-lg border border-oc-gray-200">
                         <img src="/assets/images/Icon-teams.svg" alt="WhatsApp" className="w-12 h-12" />
                         <span className="font-montserrat font-semibold text-xs min-[425px]:text-sm text-oc-gray-700">
                           Teams
@@ -218,7 +218,7 @@ export default function Index() {
               </h2>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-[1200px]">
-                <div className="flex flex-col items-center gap-4 p-6 rounded-xl border border-slate-200 bg-white shadow-sm md:min-h-[360px] lg:min-h-[406px]">
+                <div className="flex flex-col items-center gap-4 p-6 rounded-xl border border-oc-gray-200 bg-white shadow-sm md:min-h-[360px] lg:min-h-[406px]">
                   <div className="w-[100px] h-[100px] flex items-center justify-center">
                     <img
                       src="/assets/images/coin.png"
@@ -242,7 +242,7 @@ export default function Index() {
                   </div>
                 </div>
 
-                <div className="flex flex-col items-center gap-4 p-6 rounded-xl border border-slate-200 bg-white shadow-sm md:min-h-[360px] lg:min-h-[406px]">
+                <div className="flex flex-col items-center gap-4 p-6 rounded-xl border border-oc-gray-200 bg-white shadow-sm md:min-h-[360px] lg:min-h-[406px]">
                   <div className="w-[100px] h-[100px] flex items-center justify-center">
                     <img
                       src="/assets/images/medal.png"
@@ -266,7 +266,7 @@ export default function Index() {
                   </div>
                 </div>
 
-                <div className="flex flex-col items-center gap-4 p-6 rounded-xl border border-slate-200 bg-white shadow-sm md:min-h-[360px] lg:min-h-[406px]">
+                <div className="flex flex-col items-center gap-4 p-6 rounded-xl border border-oc-gray-200 bg-white shadow-sm md:min-h-[360px] lg:min-h-[406px]">
                   <div className="w-[100px] h-[100px] flex items-center justify-center">
                     <img
                       src="/assets/images/trophy.png"
@@ -290,7 +290,7 @@ export default function Index() {
                   </div>
                 </div>
 
-                <div className="flex flex-col items-center gap-4 p-6 rounded-xl border border-slate-200 bg-white shadow-sm md:min-h-[360px] lg:min-h-[406px]">
+                <div className="flex flex-col items-center gap-4 p-6 rounded-xl border border-oc-gray-200 bg-white shadow-sm md:min-h-[360px] lg:min-h-[406px]">
                   <div className="w-[100px] h-[100px] flex items-center justify-center">
                     <img
                       src="/assets/images/rocket.png"
@@ -347,11 +347,11 @@ export default function Index() {
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full z-10">
-                <div className="flex flex-col items-center gap-4 p-6 rounded-xl border border-slate-200 bg-white shadow-sm">
+                <div className="flex flex-col items-center gap-4 p-6 rounded-xl border border-oc-gray-200 bg-white shadow-sm">
                   <img
                     src="/assets/images/quote-person-01.png"
                     alt="Client testimonial"
-                    className="w-[120px] h-[120px] rounded-full border-[1.5px] border-brand-light object-cover"
+                    className="w-[120px] h-[120px] rounded-full border-[2px] border-brand-light object-cover"
                   />
                   <blockquote className="font-montserrat font-medium text-base leading-6 text-center text-brand-light">
                     "Excelente precisión y reducción de tiempos de respuesta.
@@ -362,11 +362,11 @@ export default function Index() {
                   </p>
                 </div>
 
-                <div className="flex flex-col items-center gap-4 p-6 rounded-xl border border-slate-200 bg-white shadow-sm">
+                <div className="flex flex-col items-center gap-4 p-6 rounded-xl border border-oc-gray-200 bg-white shadow-sm">
                   <img
                     src="/assets/images/quote-person-02.png"
                     alt="Client testimonial"
-                    className="w-[120px] h-[120px] rounded-full border-[1.5px] border-brand-light object-cover"
+                    className="w-[120px] h-[120px] rounded-full border-[2px] border-brand-light object-cover"
                   />
                   <blockquote className="font-montserrat font-medium text-base leading-6 text-center text-brand-light">
                     "Implementación rápida y segura. El impacto en atención al
@@ -377,11 +377,11 @@ export default function Index() {
                   </p>
                 </div>
 
-                <div className="flex flex-col items-center gap-4 p-6 rounded-xl border border-slate-200 bg-white shadow-sm">
+                <div className="flex flex-col items-center gap-4 p-6 rounded-xl border border-oc-gray-200 bg-white shadow-sm">
                   <img
                     src="/assets/images/quote-person-03.png"
                     alt="Client testimonial"
-                    className="w-[120px] h-[120px] rounded-full border-[1.5px] border-brand-light object-cover"
+                    className="w-[120px] h-[120px] rounded-full border-[2px] border-brand-light object-cover"
                   />
                   <blockquote className="font-montserrat font-medium text-base leading-6 text-center text-brand-light">
                     "Integración perfecta con nuestros canales. Altamente
@@ -454,7 +454,7 @@ export default function Index() {
               </div>
 
               <div className="flex flex-col lg:flex-row items-end gap-12">
-                <div className="flex-1 max-w-[600px] w-full p-6 rounded-xl border border-slate-200 bg-white shadow-sm mx-auto">
+                <div className="flex-1 max-w-[600px] w-full p-6 rounded-xl border border-oc-gray-200 bg-white shadow-sm mx-auto">
                   <form className="flex flex-col gap-6">
                     <div className="flex flex-col gap-1">
                       <label className="font-montserrat font-semibold text-xs leading-5 text-brand-primary">

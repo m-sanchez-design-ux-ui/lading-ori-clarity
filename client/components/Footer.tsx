@@ -8,11 +8,19 @@ export default function Footer() {
         <div className="flex flex-col gap-12">
           <div className="flex flex-col lg:flex-row justify-between items-center lg:items-start gap-8">
             <div className="flex flex-col gap-8 lg:gap-4 w-full md:w-[280px]">
-              <Link to="/" className="flex flex-col lg:flex-row items-center gap-2 mx-auto lg:mx-0">
+              <Link to="/" className="hidden lg:flex  mx-auto lg:mx-0">
                 <img
                   src="/assets/images/LogoOriClarityHorizontalWhite.svg"
                   alt="Origin Clarity AI"
                   className="h-9 w-auto"
+                />
+              </Link>
+
+              <Link to="/" className="flex lg:hidden  mx-auto lg:mx-0">
+                <img
+                  src="/assets/images/LogoOriClarityStackedWhite.svg"
+                  alt="Origin Clarity AI"
+                  className="h-14 w-auto"
                 />
               </Link>
 
@@ -75,21 +83,21 @@ export default function Footer() {
                   className="flex items-center justify-center w-8 h-8 p-1 rounded-lg bg-white hover:bg-gray-100 transition-colors"
                   aria-label="LinkedIn"
                 >
-                  <Linkedin className="w-5 h-5 text-brand-primary" />
+                  <Linkedin className="w-5 h-5 text-brand-primary stroke-[1.5px]" />
                 </a>
                 <a
                   href="#"
                   className="flex items-center justify-center w-8 h-8 p-1 rounded-lg bg-white hover:bg-gray-100 transition-colors"
                   aria-label="Twitter"
                 >
-                  <Twitter className="w-5 h-5 text-brand-primary" />
+                  <Twitter className="w-5 h-5 text-brand-primary stroke-[1.5px]" />
                 </a>
                 <a
                   href="#"
                   className="flex items-center justify-center w-8 h-8 p-1 rounded-lg bg-white hover:bg-gray-100 transition-colors"
                   aria-label="YouTube"
                 >
-                  <Youtube className="w-5 h-5 text-brand-primary" />
+                  <Youtube className="w-5 h-5 text-brand-primary stroke-[1.5px]" />
                 </a>
               </div>
             </div>
