@@ -93,6 +93,7 @@ export default {
         "surface-navbar": "rgba(255, 255, 255, 0.7)", // White/white-70
         // Legacy oc-gray-* (kept, still used across components)
         "oc-gray-700": "#374151",
+        "oc-gray-800": "#1F2937", // = text/paragraph
         "oc-gray-500": "#6B7280", // era undefined, causaba texto sin color en el formulario
         "oc-gray-400": "#9CA3AF", // era undefined, causaba placeholders sin color
         "oc-gray-300": "#D1D5DB",
